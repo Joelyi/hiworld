@@ -5,28 +5,24 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: ☆白嫖联盟_______2, server: 188.40.132.107, port: 80, type: vmess, uuid: 4ddd24d6-d901-5e5f-9a7c-080015c2e246, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /p3573l6m92h1ham3q23t, headers: {Host: 188.40.132.107}}}
   - {name: ☆官方频道：@bplm_02, server: baipiaolianmeng, port: 9999, type: vmess, uuid: 72b76a97-65d7-4f4b-b725-e54d690907bf, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: baipiaolianmeng}}}
   - {name: ☆更多节点加入以下电报群, server: baipiaolianmeng, port: 9999, type: vmess, uuid: 72b76a97-65d7-4f4b-b725-e54d690907bf, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: baipiaolianmeng}}}
   - {name: ☆电报群 ：@bplm_01, server: baipiaolianmeng, port: 9999, type: vmess, uuid: 72b76a97-65d7-4f4b-b725-e54d690907bf, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: baipiaolianmeng}}}
   - {name: ☆如需收费节点可私聊, server: baipiaolianmeng, port: 9999, type: vmess, uuid: 72b76a97-65d7-4f4b-b725-e54d690907bf, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: baipiaolianmeng}}}
   - {name: ☆群主机器人：@bplm_bot, server: baipiaolianmeng, port: 9999, type: vmess, uuid: 72b76a97-65d7-4f4b-b725-e54d690907bf, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: baipiaolianmeng}}}
-  - {name: ☆白嫖联盟_______1, server: 165.22.27.72, port: 8080, type: vmess, uuid: 980b6861-5c96-4232-94ab-628e68ebfdb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: ☆白嫖联盟_______2, server: c50s801.jamjams3.net, port: 12516, type: vmess, uuid: 3ce13954-b49b-4a3a-8af2-e3fddce19af5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: ☆白嫖联盟_______3, server: v47.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v47-unlimitndxd, headers: {Host: v47.toddns.tk}}}
-  - {name: ☆白嫖联盟_______4, server: 203.24.108.8, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
-  - {name: ☆白嫖联盟_______5, server: 203.30.189.190, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}}
-  - {name: ☆白嫖联盟_______6, server: 203.24.108.10, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}}
-  - {name: ☆白嫖联盟_______7, server: 203.30.191.191, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
-  - {name: ☆白嫖联盟_______8, server: xjp4h.mayaa.ml, port: 443, type: vmess, uuid: 82d5ea73-8002-4319-cd3c-29d1560bd290, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dsadsa1dsadsa33434, headers: {Host: xjp4h.mayaa.ml}}}
-  - {name: ☆白嫖联盟_______9, server: 190.93.244.2, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
-  - {name: ☆白嫖联盟_______10, server: 203.30.191.192, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}}
-  - {name: ☆白嫖联盟_______11, server: 66.235.200.22, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}}
-  - {name: ☆白嫖联盟_______12, server: 203.30.188.188, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
-  - {name: ☆白嫖联盟_______13, server: 203.24.108.9, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}}
-  - {name: ☆白嫖联盟_______14, server: 198.41.203.1, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /VHONOFZ3, headers: {Host: lg1.cfcdn2.xyz}}}
-  - {name: ☆白嫖联盟_______15, server: 141.101.114.32, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}}
-  - {name: ☆白嫖联盟_______16, server: 203.30.189.189, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
-  - {name: ☆白嫖联盟_______17, server: 146.190.39.123, port: 8080, type: vmess, uuid: 980b6861-5c96-4232-94ab-628e68ebfdb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false}
+  - {name: ☆白嫖联盟_______1, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: ☆白嫖联盟_______3, server: sg-lb.vhax.net, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/, headers: {Host: sg-lb.vhax.net}}}
+  - {name: ☆白嫖联盟_______4, server: sg-lb.vhax.net, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/, headers: {Host: zoom.us}}}
+  - {name: ☆白嫖联盟_______5, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/, headers: {Host: 15.235.147.186}}}
+  - {name: ☆白嫖联盟_______6, server: 15.235.147.186, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshkit/Ertusg86/635014638c264/}}
+  - {name: ☆白嫖联盟_______7, server: sg1021.hkaa0.tk, port: 8880, type: vmess, uuid: a5c804aa-8a4d-4fd2-97a1-4f0cc1384953, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hkaa0, headers: {Host: sg1021.hkaa0.tk}}}
+  - {name: ☆白嫖联盟_______8, server: gcorehkk.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /Falling42gcorehkknode, headers: {Host: gcorehkk.sylu.cyou}}}
+  - {name: ☆白嫖联盟_______9, server: 198.41.212.123, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /IYKLD53M, headers: {Host: opfr1.v2rayfree1.xyz}}}
+  - {name: ☆白嫖联盟_______10, server: gcorehk.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /Falling42gcorehknode, headers: {Host: gcorehk.sylu.cyou}}}
+  - {name: ☆白嫖联盟_______11, server: gcsshk.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /Falling42gcsshknode, headers: {Host: gcsshk.sylu.cyou}}}
+  - {name: ☆白嫖联盟_______12, server: gcsshkk.sylu.cyou, port: 443, type: vmess, uuid: 12e08256-da5d-4b1c-aeca-8c973ccceef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /Falling42gcsshkknode, headers: {Host: gcsshkk.sylu.cyou}}}
+  - {name: ☆白嫖联盟_______13, server: 203.30.190.191, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -35,13 +31,13 @@ proxy-groups:
       - 🔯 故障转移
       - 🔮 负载均衡
       - DIRECT
+      - ☆白嫖联盟_______2
       - ☆官方频道：@bplm_02
       - ☆更多节点加入以下电报群
       - ☆电报群 ：@bplm_01
       - ☆如需收费节点可私聊
       - ☆群主机器人：@bplm_bot
       - ☆白嫖联盟_______1
-      - ☆白嫖联盟_______2
       - ☆白嫖联盟_______3
       - ☆白嫖联盟_______4
       - ☆白嫖联盟_______5
@@ -53,23 +49,19 @@ proxy-groups:
       - ☆白嫖联盟_______11
       - ☆白嫖联盟_______12
       - ☆白嫖联盟_______13
-      - ☆白嫖联盟_______14
-      - ☆白嫖联盟_______15
-      - ☆白嫖联盟_______16
-      - ☆白嫖联盟_______17
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - ☆白嫖联盟_______2
       - ☆官方频道：@bplm_02
       - ☆更多节点加入以下电报群
       - ☆电报群 ：@bplm_01
       - ☆如需收费节点可私聊
       - ☆群主机器人：@bplm_bot
       - ☆白嫖联盟_______1
-      - ☆白嫖联盟_______2
       - ☆白嫖联盟_______3
       - ☆白嫖联盟_______4
       - ☆白嫖联盟_______5
@@ -81,22 +73,18 @@ proxy-groups:
       - ☆白嫖联盟_______11
       - ☆白嫖联盟_______12
       - ☆白嫖联盟_______13
-      - ☆白嫖联盟_______14
-      - ☆白嫖联盟_______15
-      - ☆白嫖联盟_______16
-      - ☆白嫖联盟_______17
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
+      - ☆白嫖联盟_______2
       - ☆官方频道：@bplm_02
       - ☆更多节点加入以下电报群
       - ☆电报群 ：@bplm_01
       - ☆如需收费节点可私聊
       - ☆群主机器人：@bplm_bot
       - ☆白嫖联盟_______1
-      - ☆白嫖联盟_______2
       - ☆白嫖联盟_______3
       - ☆白嫖联盟_______4
       - ☆白嫖联盟_______5
@@ -108,23 +96,19 @@ proxy-groups:
       - ☆白嫖联盟_______11
       - ☆白嫖联盟_______12
       - ☆白嫖联盟_______13
-      - ☆白嫖联盟_______14
-      - ☆白嫖联盟_______15
-      - ☆白嫖联盟_______16
-      - ☆白嫖联盟_______17
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies:
+      - ☆白嫖联盟_______2
       - ☆官方频道：@bplm_02
       - ☆更多节点加入以下电报群
       - ☆电报群 ：@bplm_01
       - ☆如需收费节点可私聊
       - ☆群主机器人：@bplm_bot
       - ☆白嫖联盟_______1
-      - ☆白嫖联盟_______2
       - ☆白嫖联盟_______3
       - ☆白嫖联盟_______4
       - ☆白嫖联盟_______5
@@ -136,10 +120,6 @@ proxy-groups:
       - ☆白嫖联盟_______11
       - ☆白嫖联盟_______12
       - ☆白嫖联盟_______13
-      - ☆白嫖联盟_______14
-      - ☆白嫖联盟_______15
-      - ☆白嫖联盟_______16
-      - ☆白嫖联盟_______17
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -159,13 +139,13 @@ proxy-groups:
       - ♻️ 自动选择
       - 🔯 故障转移
       - 🔮 负载均衡
+      - ☆白嫖联盟_______2
       - ☆官方频道：@bplm_02
       - ☆更多节点加入以下电报群
       - ☆电报群 ：@bplm_01
       - ☆如需收费节点可私聊
       - ☆群主机器人：@bplm_bot
       - ☆白嫖联盟_______1
-      - ☆白嫖联盟_______2
       - ☆白嫖联盟_______3
       - ☆白嫖联盟_______4
       - ☆白嫖联盟_______5
@@ -177,10 +157,6 @@ proxy-groups:
       - ☆白嫖联盟_______11
       - ☆白嫖联盟_______12
       - ☆白嫖联盟_______13
-      - ☆白嫖联盟_______14
-      - ☆白嫖联盟_______15
-      - ☆白嫖联盟_______16
-      - ☆白嫖联盟_______17
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
