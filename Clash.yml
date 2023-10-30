@@ -32,8 +32,7 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🎯 全球直连
-      - 公益机场:sub.ssrsub.com
+      - DIRECT
       - 🇺🇸 V001--US-付费推荐:dlj.tf/ssrsub
       - 🇺🇸 V002--US-付费推荐:dlj.tf/ssrsub
       - 🇺🇸 V003--US-付费推荐:dlj.tf/ssrsub
@@ -59,8 +58,8 @@ proxy-groups:
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
     proxies:
-      - 公益机场:sub.ssrsub.com
       - 🇺🇸 V001--US-付费推荐:dlj.tf/ssrsub
       - 🇺🇸 V002--US-付费推荐:dlj.tf/ssrsub
       - 🇺🇸 V003--US-付费推荐:dlj.tf/ssrsub
@@ -88,39 +87,6 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 公益机场:sub.ssrsub.com
-      - 🇺🇸 V001--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V002--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V003--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V004--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V005--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V006--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V007--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V008--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V009--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V010--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V011--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V012--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V013--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V014--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V015--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V016--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V017--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V018--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V019--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V020--US-付费推荐:dlj.tf/ssrsub
-      - 🇺🇸 V021--US-付费推荐:dlj.tf/ssrsub
-  - name: 🌏 国内媒体
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🚀 节点选择
-  - name: Ⓜ️ 微软服务
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🚀 节点选择
-      - 公益机场:sub.ssrsub.com
       - 🇺🇸 V001--US-付费推荐:dlj.tf/ssrsub
       - 🇺🇸 V002--US-付费推荐:dlj.tf/ssrsub
       - 🇺🇸 V003--US-付费推荐:dlj.tf/ssrsub
@@ -146,7 +112,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 公益机场:sub.ssrsub.com
+      - 🎯 全球直连
       - 🇺🇸 V001--US-付费推荐:dlj.tf/ssrsub
       - 🇺🇸 V002--US-付费推荐:dlj.tf/ssrsub
       - 🇺🇸 V003--US-付费推荐:dlj.tf/ssrsub
@@ -168,14 +134,37 @@ proxy-groups:
       - 🇺🇸 V019--US-付费推荐:dlj.tf/ssrsub
       - 🇺🇸 V020--US-付费推荐:dlj.tf/ssrsub
       - 🇺🇸 V021--US-付费推荐:dlj.tf/ssrsub
-      - 🎯 全球直连
-  - name: 🍎 苹果服务
+  - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ♻️ 自动选择
-      - 公益机场:sub.ssrsub.com
+      - 🇺🇸 V001--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V002--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V003--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V004--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V005--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V006--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V007--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V008--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V009--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V010--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V011--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V012--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V013--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V014--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V015--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V016--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V017--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V018--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V019--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V020--US-付费推荐:dlj.tf/ssrsub
+      - 🇺🇸 V021--US-付费推荐:dlj.tf/ssrsub
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
       - 🇺🇸 V001--US-付费推荐:dlj.tf/ssrsub
       - 🇺🇸 V002--US-付费推荐:dlj.tf/ssrsub
       - 🇺🇸 V003--US-付费推荐:dlj.tf/ssrsub
@@ -201,7 +190,14 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
   - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
     type: select
     proxies:
       - REJECT
@@ -212,7 +208,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 公益机场:sub.ssrsub.com
       - 🇺🇸 V001--US-付费推荐:dlj.tf/ssrsub
       - 🇺🇸 V002--US-付费推荐:dlj.tf/ssrsub
       - 🇺🇸 V003--US-付费推荐:dlj.tf/ssrsub
