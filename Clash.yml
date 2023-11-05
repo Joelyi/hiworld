@@ -557,6 +557,7 @@ proxy-groups:
       - GLaDOS-B1-06
       - GLaDOS-B1-07
       - GLaDOS-B1-08
+      - GLaDOS-B1-09
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -571,6 +572,7 @@ proxy-groups:
       - GLaDOS-B1-06
       - GLaDOS-B1-07
       - GLaDOS-B1-08
+      - GLaDOS-B1-09
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -585,6 +587,7 @@ proxy-groups:
       - GLaDOS-B1-06
       - GLaDOS-B1-07
       - GLaDOS-B1-08
+      - GLaDOS-B1-09
   - name: 📲 电报信息
     type: select
     proxies:
@@ -598,6 +601,7 @@ proxy-groups:
       - GLaDOS-B1-06
       - GLaDOS-B1-07
       - GLaDOS-B1-08
+      - GLaDOS-B1-09
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -611,6 +615,7 @@ proxy-groups:
       - GLaDOS-B1-06
       - GLaDOS-B1-07
       - GLaDOS-B1-08
+      - GLaDOS-B1-09
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -624,6 +629,7 @@ proxy-groups:
       - GLaDOS-B1-06
       - GLaDOS-B1-07
       - GLaDOS-B1-08
+      - GLaDOS-B1-09
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -654,6 +660,7 @@ proxy-groups:
       - GLaDOS-B1-06
       - GLaDOS-B1-07
       - GLaDOS-B1-08
+      - GLaDOS-B1-09
 
 rules:
 # 本地/局域网地址
