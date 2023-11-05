@@ -85,172 +85,546 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_1","type":"trojan","server":"other.kunlun-ppg.com","port":10850,"udp":true,"password":"32aba2ce-ab7a-4199-b94c-5e717ffc7f98","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国->🇮🇳_IN_印度","type":"vmess","server":"mm2.shabijichang.com","port":80,"cipher":"auto","uuid":"c458695d-6908-45c3-9512-e0c46418454c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"mm2.shabijichang.com"}}}
-  - {"name":"🇺🇸_US_美国_1","type":"vmess","server":"162.159.133.234","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"octavi.cfd"}}}
-  - {"name":"🇨🇦_CA_加拿大_1","type":"trojan","server":"23.227.38.45","port":443,"udp":true,"password":"3f23c1eb-ace4-49ec-a7f0-f591b006b95a","sni":"jus3.jsjc.sbs","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/jsjc/us3"}}
-  - {"name":"🇩🇪_DE_德国","type":"trojan","server":"213.202.216.14","port":443,"udp":true,"password":"3f23c1eb-ace4-49ec-a7f0-f591b006b95a","sni":"downloadde.xn--mes358acgm99l.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇺🇸_US_美国_2","type":"vmess","server":"45.199.138.146","port":30000,"cipher":"auto","uuid":"4ec0ae62-de09-4029-904a-0313d4628ecf","alterId":64,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/path/1698932401577","headers":{"host":"www.19229362.xyz"}}}
-  - {"name":"🇨🇳_CN_中国->🇫🇷_FR_法国_1","type":"ss","server":"fl.network-cdn-gw.cc","port":43302,"password":"a8543a4b-1d3c-4a52-950f-a36ad24ca28e","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_2","type":"trojan","server":"other.kunlun-ppg.com","port":10838,"udp":true,"password":"5c97ca4b-8640-423d-9d50-ba025e15729f","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳_CN_中国->🇫🇷_FR_法国_2","type":"ss","server":"fr.network-cdn-gw.cc","port":20004,"password":"a8543a4b-1d3c-4a52-950f-a36ad24ca28e","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇨🇦_CA_加拿大->🇩🇪_DE_德国","type":"trojan","server":"23.227.39.163","port":443,"udp":true,"password":"3f23c1eb-ace4-49ec-a7f0-f591b006b95a","sni":"jde1.jsjc.sbs","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/jsjc/de1"}}
-  - {"name":"🇨🇳_CN_中国->🇮🇳_IN_印度","type":"ss","server":"in01.network-cdn-gw.cc","port":43304,"password":"a8543a4b-1d3c-4a52-950f-a36ad24ca28e","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇨🇳_CN_中国->🇦🇹_AT_奥地利","type":"trojan","server":"other.kunlun-ppg.com","port":10848,"udp":true,"password":"5c97ca4b-8640-423d-9d50-ba025e15729f","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇳_CN_中国->🇬🇧_GB_英国","type":"vmess","server":"112.29.94.23","port":49004,"cipher":"auto","uuid":"21a9bff2-72de-4e62-93ff-8b159f66d875","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇦_CA_加拿大_2","type":"trojan","server":"23.227.38.29","port":443,"udp":true,"password":"3f23c1eb-ace4-49ec-a7f0-f591b006b95a","sni":"jus2.jsjc.sbs","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/jsjc/us2"}}
-  - {"name":"🇨🇳_CN_中国->🇸🇬_SG_新加坡","type":"ss","server":"uk.network-cdn-gw.cc","port":10014,"password":"a8543a4b-1d3c-4a52-950f-a36ad24ca28e","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇨🇦_CA_加拿大->🇬🇧_GB_英国","type":"vmess","server":"64.68.192.77","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":1,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"linkvws","headers":{"host":"ophelia.mom"}}}
-  - {"name":"🇨🇳_CN_中国->🇺🇸_US_美国_3","type":"trojan","server":"other.kunlun-ppg.com","port":10837,"udp":true,"password":"32aba2ce-ab7a-4199-b94c-5e717ffc7f98","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇦_CA_加拿大_3","type":"trojan","server":"23.227.38.19","port":443,"udp":true,"password":"3f23c1eb-ace4-49ec-a7f0-f591b006b95a","sni":"jus1.jsjc.sbs","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/jsjc/us1"}}
-  - {"name":"🇨🇳_CN_中国->🇺🇦_UA_乌克兰","type":"trojan","server":"other.kunlun-ppg.com","port":10845,"udp":true,"password":"5c97ca4b-8640-423d-9d50-ba025e15729f","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+proxies:
+  - name: GLaDOS-B1-01
+    type: ss
+    server: b90f2b0.b1.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.fi:12794
+  - name: GLaDOS-B1-02
+    type: ss
+    server: b90f2b0.b2.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.com:12794
+  - name: GLaDOS-B1-03
+    type: ss
+    server: b90f2b0.b3.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.cat:12794
+  - name: GLaDOS-B1-04
+    type: ss
+    server: b90f2b0.b4.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.nintendo.jp:12794
+  - name: GLaDOS-B1-05
+    type: ss
+    server: b90f2b0.b5.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.nvidia.com:12794
+  - name: GLaDOS-B1-06
+    type: ss
+    server: b90f2b0.b6.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.es:12794
+  - name: GLaDOS-B1-07
+    type: ss
+    server: b90f2b0.b7.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.lt:12794
+  - name: GLaDOS-B1-08
+    type: ss
+    server: b90f2b0.b8.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.nintendo.it:12794
+  - name: GLaDOS-B1-09
+    type: ss
+    server: b90f2b0.b9.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.lv:12794
+
+  - name: GLaDOS-US-01
+    type: ss
+    server: b90f2b0.u1.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.net:12794
+  - name: GLaDOS-US-02
+    type: ss
+    server: b90f2b0.u2.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.de:12794
+  - name: GLaDOS-US-03
+    type: ss
+    server: b90f2b0.u3.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.nintendo.com:12794
+  - name: GLaDOS-US-04
+    type: ss
+    server: b90f2b0.u4.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.blizzard.com:12794
+  - name: GLaDOS-US-05
+    type: ss
+    server: b90f2b0.u5.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.fi:12794
+  - name: GLaDOS-US-06
+    type: ss
+    server: b90f2b0.u6.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.lv:12794
+  - name: GLaDOS-JP-01
+    type: ss
+    server: b90f2b0.j1.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.net:12794
+  - name: GLaDOS-JP-02
+    type: ss
+    server: b90f2b0.j2.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.epicgames.com:12794
+  - name: GLaDOS-JP-03
+    type: ss
+    server: b90f2b0.j3.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.nintendo.be:12794
+  - name: GLaDOS-TW-01
+    type: ss
+    server: b90f2b0.t1.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.mozilla.net:12794
+  - name: GLaDOS-TW-02
+    type: ss
+    server: b90f2b0.t2.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.epicgames.com:12794
+  - name: GLaDOS-TW-03
+    type: ss
+    server: b90f2b0.t3.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.nintendo.be:12794
+  - name: GLaDOS-TW-04
+    type: ss
+    server: b90f2b0.t4.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.nintendo.es:12794
+  - name: GLaDOS-TW-05
+    type: ss
+    server: b90f2b0.t5.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.dk:12794
+  - name: GLaDOS-TW-06
+    type: ss
+    server: b90f2b0.t6.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.nintendo.eu:12794
+  - name: GLaDOS-SG-01
+    type: ss
+    server: b90f2b0.s1.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.eu:12794
+  - name: GLaDOS-SG-02
+    type: ss
+    server: b90f2b0.s2.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.jp:12794
+  - name: GLaDOS-SG-03
+    type: ss
+    server: b90f2b0.s3.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.dk:12794
+  - name: GLaDOS-HK-01
+    type: ss
+    server: b90f2b0.h1.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.it:12794
+  - name: GLaDOS-HK-02
+    type: ss
+    server: b90f2b0.h2.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.epicgames.com:12794
+  - name: GLaDOS-HK-03
+    type: ss
+    server: b90f2b0.h3.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.nvidia.com:12794
+  - name: GLaDOS-UK-01
+    type: ss
+    server: b90f2b0.e1.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.md:12794
+  - name: GLaDOS-UK-02
+    type: ss
+    server: b90f2b0.e2.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.nvidia.com:12794
+  - name: GLaDOS-UK-03
+    type: ss
+    server: b90f2b0.e3.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.jp:12794
+
+  - name: GLaDOS-D1-01
+    type: ss
+    server: b90f2b0.da.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.nintendo.net:12794
+  - name: GLaDOS-D1-02
+    type: ss
+    server: b90f2b0.db.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.io:12794
+  - name: GLaDOS-D1-03
+    type: ss
+    server: b90f2b0.dc.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.md:12794
+
+  - name: GLaDOS-S1-01
+    type: ss
+    server: b90f2b0.f1.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.nintendo.net.net:12794
+  - name: GLaDOS-S1-02
+    type: ss
+    server: b90f2b0.f2.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.nintendo.eu.net:12794
+  - name: GLaDOS-S1-03
+    type: ss
+    server: b90f2b0.f3.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.lu.net:12794
+
+
+
+
+  - name: GLaDOS-TW-1-Netflix
+    type: ss
+    server: b90f2b0.d1.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.cat.net:12794
+  - name: GLaDOS-TW-2-Netflix
+    type: ss
+    server: b90f2b0.d2.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.lt.net:12794
+  - name: GLaDOS-TW-3-Netflix
+    type: ss
+    server: b90f2b0.d3.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.lu.net:12794
+  - name: GLaDOS-US-4-Netflix
+    type: ss
+    server: b90f2b0.d4.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.nintendo.de.net:12794
+  - name: GLaDOS-US-5-Netflix
+    type: ss
+    server: b90f2b0.d5.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.ee.net:12794
+  - name: GLaDOS-US-6-Netflix
+    type: ss
+    server: b90f2b0.d6.glados-config.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: b90f2b0.dl.microsoft.lv.net:12794
+      
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国_1
-      - 🇨🇦_CA_加拿大_1
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_2
-      - 🇨🇦_CA_加拿大->🇩🇪_DE_德国
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇦🇹_AT_奥地利
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国
-      - 🇨🇦_CA_加拿大_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇨🇦_CA_加拿大_3
-      - 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+        - GLaDOS-B1-01
+        - GLaDOS-B1-02
+        - GLaDOS-B1-03
+        - GLaDOS-B1-04
+        - GLaDOS-B1-05
+        - GLaDOS-B1-06
+        - GLaDOS-B1-07
+        - GLaDOS-B1-08
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国_1
-      - 🇨🇦_CA_加拿大_1
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_2
-      - 🇨🇦_CA_加拿大->🇩🇪_DE_德国
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇦🇹_AT_奥地利
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国
-      - 🇨🇦_CA_加拿大_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇨🇦_CA_加拿大_3
-      - 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+        - GLaDOS-B1-01
+        - GLaDOS-B1-02
+        - GLaDOS-B1-03
+        - GLaDOS-B1-04
+        - GLaDOS-B1-05
+        - GLaDOS-B1-06
+        - GLaDOS-B1-07
+        - GLaDOS-B1-08
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国_1
-      - 🇨🇦_CA_加拿大_1
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_2
-      - 🇨🇦_CA_加拿大->🇩🇪_DE_德国
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇦🇹_AT_奥地利
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国
-      - 🇨🇦_CA_加拿大_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇨🇦_CA_加拿大_3
-      - 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+        - GLaDOS-B1-01
+        - GLaDOS-B1-02
+        - GLaDOS-B1-03
+        - GLaDOS-B1-04
+        - GLaDOS-B1-05
+        - GLaDOS-B1-06
+        - GLaDOS-B1-07
+        - GLaDOS-B1-08
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国_1
-      - 🇨🇦_CA_加拿大_1
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_2
-      - 🇨🇦_CA_加拿大->🇩🇪_DE_德国
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇦🇹_AT_奥地利
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国
-      - 🇨🇦_CA_加拿大_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇨🇦_CA_加拿大_3
-      - 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+        - GLaDOS-B1-01
+        - GLaDOS-B1-02
+        - GLaDOS-B1-03
+        - GLaDOS-B1-04
+        - GLaDOS-B1-05
+        - GLaDOS-B1-06
+        - GLaDOS-B1-07
+        - GLaDOS-B1-08
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国_1
-      - 🇨🇦_CA_加拿大_1
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_2
-      - 🇨🇦_CA_加拿大->🇩🇪_DE_德国
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇦🇹_AT_奥地利
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国
-      - 🇨🇦_CA_加拿大_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇨🇦_CA_加拿大_3
-      - 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+        - GLaDOS-B1-01
+        - GLaDOS-B1-02
+        - GLaDOS-B1-03
+        - GLaDOS-B1-04
+        - GLaDOS-B1-05
+        - GLaDOS-B1-06
+        - GLaDOS-B1-07
+        - GLaDOS-B1-08
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国_1
-      - 🇨🇦_CA_加拿大_1
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_2
-      - 🇨🇦_CA_加拿大->🇩🇪_DE_德国
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇦🇹_AT_奥地利
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国
-      - 🇨🇦_CA_加拿大_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇨🇦_CA_加拿大_3
-      - 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+        - GLaDOS-B1-01
+        - GLaDOS-B1-02
+        - GLaDOS-B1-03
+        - GLaDOS-B1-04
+        - GLaDOS-B1-05
+        - GLaDOS-B1-06
+        - GLaDOS-B1-07
+        - GLaDOS-B1-08
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -273,25 +647,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-      - 🇺🇸_US_美国->🇮🇳_IN_印度
-      - 🇺🇸_US_美国_1
-      - 🇨🇦_CA_加拿大_1
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_1
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国_2
-      - 🇨🇦_CA_加拿大->🇩🇪_DE_德国
-      - 🇨🇳_CN_中国->🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇦🇹_AT_奥地利
-      - 🇨🇳_CN_中国->🇬🇧_GB_英国
-      - 🇨🇦_CA_加拿大_2
-      - 🇨🇳_CN_中国->🇸🇬_SG_新加坡
-      - 🇨🇦_CA_加拿大->🇬🇧_GB_英国
-      - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-      - 🇨🇦_CA_加拿大_3
-      - 🇨🇳_CN_中国->🇺🇦_UA_乌克兰
+        - GLaDOS-B1-01
+        - GLaDOS-B1-02
+        - GLaDOS-B1-03
+        - GLaDOS-B1-04
+        - GLaDOS-B1-05
+        - GLaDOS-B1-06
+        - GLaDOS-B1-07
+        - GLaDOS-B1-08
 
 rules:
 # 本地/局域网地址
