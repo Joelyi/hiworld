@@ -85,7 +85,6 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-proxies:
   - name: GLaDOS-B1-01
     type: ss
     server: b90f2b0.b1.glados-config.com
@@ -550,81 +549,81 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-        - GLaDOS-B1-01
-        - GLaDOS-B1-02
-        - GLaDOS-B1-03
-        - GLaDOS-B1-04
-        - GLaDOS-B1-05
-        - GLaDOS-B1-06
-        - GLaDOS-B1-07
-        - GLaDOS-B1-08
+      - GLaDOS-B1-01
+      - GLaDOS-B1-02
+      - GLaDOS-B1-03
+      - GLaDOS-B1-04
+      - GLaDOS-B1-05
+      - GLaDOS-B1-06
+      - GLaDOS-B1-07
+      - GLaDOS-B1-08
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-        - GLaDOS-B1-01
-        - GLaDOS-B1-02
-        - GLaDOS-B1-03
-        - GLaDOS-B1-04
-        - GLaDOS-B1-05
-        - GLaDOS-B1-06
-        - GLaDOS-B1-07
-        - GLaDOS-B1-08
+      - GLaDOS-B1-01
+      - GLaDOS-B1-02
+      - GLaDOS-B1-03
+      - GLaDOS-B1-04
+      - GLaDOS-B1-05
+      - GLaDOS-B1-06
+      - GLaDOS-B1-07
+      - GLaDOS-B1-08
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-        - GLaDOS-B1-01
-        - GLaDOS-B1-02
-        - GLaDOS-B1-03
-        - GLaDOS-B1-04
-        - GLaDOS-B1-05
-        - GLaDOS-B1-06
-        - GLaDOS-B1-07
-        - GLaDOS-B1-08
+      - GLaDOS-B1-01
+      - GLaDOS-B1-02
+      - GLaDOS-B1-03
+      - GLaDOS-B1-04
+      - GLaDOS-B1-05
+      - GLaDOS-B1-06
+      - GLaDOS-B1-07
+      - GLaDOS-B1-08
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-        - GLaDOS-B1-01
-        - GLaDOS-B1-02
-        - GLaDOS-B1-03
-        - GLaDOS-B1-04
-        - GLaDOS-B1-05
-        - GLaDOS-B1-06
-        - GLaDOS-B1-07
-        - GLaDOS-B1-08
+      - GLaDOS-B1-01
+      - GLaDOS-B1-02
+      - GLaDOS-B1-03
+      - GLaDOS-B1-04
+      - GLaDOS-B1-05
+      - GLaDOS-B1-06
+      - GLaDOS-B1-07
+      - GLaDOS-B1-08
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-        - GLaDOS-B1-01
-        - GLaDOS-B1-02
-        - GLaDOS-B1-03
-        - GLaDOS-B1-04
-        - GLaDOS-B1-05
-        - GLaDOS-B1-06
-        - GLaDOS-B1-07
-        - GLaDOS-B1-08
+      - GLaDOS-B1-01
+      - GLaDOS-B1-02
+      - GLaDOS-B1-03
+      - GLaDOS-B1-04
+      - GLaDOS-B1-05
+      - GLaDOS-B1-06
+      - GLaDOS-B1-07
+      - GLaDOS-B1-08
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-        - GLaDOS-B1-01
-        - GLaDOS-B1-02
-        - GLaDOS-B1-03
-        - GLaDOS-B1-04
-        - GLaDOS-B1-05
-        - GLaDOS-B1-06
-        - GLaDOS-B1-07
-        - GLaDOS-B1-08
+      - GLaDOS-B1-01
+      - GLaDOS-B1-02
+      - GLaDOS-B1-03
+      - GLaDOS-B1-04
+      - GLaDOS-B1-05
+      - GLaDOS-B1-06
+      - GLaDOS-B1-07
+      - GLaDOS-B1-08
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -647,14 +646,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-        - GLaDOS-B1-01
-        - GLaDOS-B1-02
-        - GLaDOS-B1-03
-        - GLaDOS-B1-04
-        - GLaDOS-B1-05
-        - GLaDOS-B1-06
-        - GLaDOS-B1-07
-        - GLaDOS-B1-08
+      - GLaDOS-B1-01
+      - GLaDOS-B1-02
+      - GLaDOS-B1-03
+      - GLaDOS-B1-04
+      - GLaDOS-B1-05
+      - GLaDOS-B1-06
+      - GLaDOS-B1-07
+      - GLaDOS-B1-08
 
 rules:
 # 本地/局域网地址
