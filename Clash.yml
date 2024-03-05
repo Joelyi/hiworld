@@ -1,7 +1,7 @@
 # GLaDOS
 # GLobal Local and Destination Operating System
-# Clash Config File for Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0-428407-21-20
-# Generated at Wed Feb 21 2024 02:35:50 GMT+0000 (Coordinated Universal Time) by Aperture Science
+# Clash Config File for ClashforWindows/0.20.33-428407-21-16
+# Generated at Tue Mar 05 2024 09:16:02 GMT+0000 (Coordinated Universal Time) by Aperture Science
 # ░██████╗░██╗░░░░░░█████╗░██████╗░░█████╗░░██████╗
 # ██╔════╝░██║░░░░░██╔══██╗██╔══██╗██╔══██╗██╔════╝
 # ██║░░██╗░██║░░░░░███████║██║░░██║██║░░██║╚█████╗░
@@ -44,67 +44,17 @@ dns:
 proxies:
   - name: GLaDOS-B1-01
     type: ss
-    server: f7efd38.b1.glados-config.net
+    server: f7efd38.b1.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
     plugin: obfs
     plugin-opts:
       mode: tls
-      host: f7efd38.dl.nintendo.net:110705
+      host: f7efd38.dl.microsoft.ge:110705
   - name: GLaDOS-B1-02
     type: ss
-    server: f7efd38.b2.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.hu:110705
-  - name: GLaDOS-B1-03
-    type: ss
-    server: f7efd38.b3.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.it:110705
-  - name: GLaDOS-B1-04
-    type: ss
-    server: f7efd38.b4.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.nintendo.jp:110705
-  - name: GLaDOS-B1-05
-    type: ss
-    server: f7efd38.b5.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.nintendo.com:110705
-  - name: GLaDOS-B1-06
-    type: ss
-    server: f7efd38.b6.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.dk:110705
-  - name: GLaDOS-B1-07
-    type: ss
-    server: f7efd38.b7.glados-config.net
+    server: f7efd38.b2.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
@@ -112,40 +62,9 @@ proxies:
     plugin-opts:
       mode: tls
       host: f7efd38.dl.microsoft.es:110705
-  - name: GLaDOS-B1-08
+  - name: GLaDOS-B1-03
     type: ss
-    server: f7efd38.b8.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.ee:110705
-  - name: GLaDOS-B1-09
-    type: ss
-    server: f7efd38.b9.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.ee:110705
-
-  - name: GLaDOS-US-01
-    type: ss
-    server: f7efd38.u1.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.ge:110705
-  - name: GLaDOS-US-02
-    type: ss
-    server: f7efd38.u2.glados-config.net
+    server: f7efd38.b3.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
@@ -153,59 +72,19 @@ proxies:
     plugin-opts:
       mode: tls
       host: f7efd38.dl.microsoft.lt:110705
-  - name: GLaDOS-US-03
+  - name: GLaDOS-B1-04
     type: ss
-    server: f7efd38.u3.glados-config.net
+    server: f7efd38.b4.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
     plugin: obfs
     plugin-opts:
       mode: tls
-      host: f7efd38.dl.nintendo.net:110705
-  - name: GLaDOS-US-04
+      host: f7efd38.dl.microsoft.cz:110705
+  - name: GLaDOS-B1-05
     type: ss
-    server: f7efd38.u4.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.epicgames.com:110705
-  - name: GLaDOS-US-05
-    type: ss
-    server: f7efd38.u5.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.md:110705
-  - name: GLaDOS-US-06
-    type: ss
-    server: f7efd38.u6.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.dk:110705
-  - name: GLaDOS-JP-01
-    type: ss
-    server: f7efd38.j1.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.com:110705
-  - name: GLaDOS-JP-02
-    type: ss
-    server: f7efd38.j2.glados-config.net
+    server: f7efd38.b5.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
@@ -213,29 +92,39 @@ proxies:
     plugin-opts:
       mode: tls
       host: f7efd38.dl.microsoft.eu:110705
-  - name: GLaDOS-JP-03
+  - name: GLaDOS-B1-06
     type: ss
-    server: f7efd38.j3.glados-config.net
+    server: f7efd38.b6.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
     plugin: obfs
     plugin-opts:
       mode: tls
-      host: f7efd38.dl.microsoft.ge:110705
-  - name: GLaDOS-TW-01
+      host: f7efd38.dl.fastly.net:110705
+  - name: GLaDOS-B1-07
     type: ss
-    server: f7efd38.t1.glados-config.net
+    server: f7efd38.b7.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
     plugin: obfs
     plugin-opts:
       mode: tls
-      host: f7efd38.dl.microsoft.cat:110705
-  - name: GLaDOS-TW-02
+      host: f7efd38.dl.nintendo.jp:110705
+  - name: GLaDOS-B1-08
     type: ss
-    server: f7efd38.t2.glados-config.net
+    server: f7efd38.b8.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.nintendo.es:110705
+  - name: GLaDOS-B1-09
+    type: ss
+    server: f7efd38.b9.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
@@ -243,9 +132,40 @@ proxies:
     plugin-opts:
       mode: tls
       host: f7efd38.dl.microsoft.io:110705
-  - name: GLaDOS-TW-03
+
+  - name: GLaDOS-US-01
     type: ss
-    server: f7efd38.t3.glados-config.net
+    server: f7efd38.u1.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.nintendo.jp:110705
+  - name: GLaDOS-US-02
+    type: ss
+    server: f7efd38.u2.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.microsoft.de:110705
+  - name: GLaDOS-US-03
+    type: ss
+    server: f7efd38.u3.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.fastly.net:110705
+  - name: GLaDOS-US-04
+    type: ss
+    server: f7efd38.u4.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
@@ -253,49 +173,9 @@ proxies:
     plugin-opts:
       mode: tls
       host: f7efd38.dl.microsoft.is:110705
-  - name: GLaDOS-TW-04
+  - name: GLaDOS-US-05
     type: ss
-    server: f7efd38.t4.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.ch:110705
-  - name: GLaDOS-TW-05
-    type: ss
-    server: f7efd38.t5.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.fi:110705
-  - name: GLaDOS-TW-06
-    type: ss
-    server: f7efd38.t6.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.ge:110705
-  - name: GLaDOS-SG-01
-    type: ss
-    server: f7efd38.s1.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.nintendo.net:110705
-  - name: GLaDOS-SG-02
-    type: ss
-    server: f7efd38.s2.glados-config.net
+    server: f7efd38.u5.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
@@ -303,69 +183,59 @@ proxies:
     plugin-opts:
       mode: tls
       host: f7efd38.dl.microsoft.it:110705
-  - name: GLaDOS-SG-03
+  - name: GLaDOS-US-06
     type: ss
-    server: f7efd38.s3.glados-config.net
+    server: f7efd38.u6.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
     plugin: obfs
     plugin-opts:
       mode: tls
-      host: f7efd38.dl.nintendo.eu:110705
-  - name: GLaDOS-HK-01
+      host: f7efd38.dl.microsoft.net:110705
+  - name: GLaDOS-JP-01
     type: ss
-    server: f7efd38.h1.glados-config.net
+    server: f7efd38.j1.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
     plugin: obfs
     plugin-opts:
       mode: tls
-      host: f7efd38.dl.microsoft.cat:110705
-  - name: GLaDOS-HK-02
+      host: f7efd38.dl.microsoft.dk:110705
+  - name: GLaDOS-JP-02
     type: ss
-    server: f7efd38.h2.glados-config.net
+    server: f7efd38.j2.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
     plugin: obfs
     plugin-opts:
       mode: tls
-      host: f7efd38.dl.epicgames.com:110705
-  - name: GLaDOS-HK-03
+      host: f7efd38.dl.microsoft.de:110705
+  - name: GLaDOS-JP-03
     type: ss
-    server: f7efd38.h3.glados-config.net
+    server: f7efd38.j3.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
     plugin: obfs
     plugin-opts:
       mode: tls
-      host: f7efd38.dl.microsoft.eu:110705
-  - name: GLaDOS-UK-01
+      host: f7efd38.dl.microsoft.it:110705
+  - name: GLaDOS-TW-01
     type: ss
-    server: f7efd38.e1.glados-config.net
+    server: f7efd38.t1.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
     plugin: obfs
     plugin-opts:
       mode: tls
-      host: f7efd38.dl.microsoft.eu:110705
-  - name: GLaDOS-UK-02
+      host: f7efd38.dl.nintendo.jp:110705
+  - name: GLaDOS-TW-02
     type: ss
-    server: f7efd38.e2.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.io:110705
-  - name: GLaDOS-UK-03
-    type: ss
-    server: f7efd38.e3.glados-config.net
+    server: f7efd38.t2.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
@@ -373,30 +243,9 @@ proxies:
     plugin-opts:
       mode: tls
       host: f7efd38.dl.microsoft.lv:110705
-
-  - name: GLaDOS-D1-01
+  - name: GLaDOS-TW-03
     type: ss
-    server: f7efd38.da.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.nintendo.de:110705
-  - name: GLaDOS-D1-02
-    type: ss
-    server: f7efd38.db.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.fi:110705
-  - name: GLaDOS-D1-03
-    type: ss
-    server: f7efd38.dc.glados-config.net
+    server: f7efd38.t3.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
@@ -404,74 +253,161 @@ proxies:
     plugin-opts:
       mode: tls
       host: f7efd38.dl.blizzard.com:110705
+  - name: GLaDOS-TW-04
+    type: ss
+    server: f7efd38.t4.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.microsoft.ee:110705
+  - name: GLaDOS-TW-05
+    type: ss
+    server: f7efd38.t5.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.microsoft.is:110705
+  - name: GLaDOS-TW-06
+    type: ss
+    server: f7efd38.t6.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.microsoft.md:110705
+  - name: GLaDOS-SG-01
+    type: ss
+    server: f7efd38.s1.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.microsoft.cat:110705
+  - name: GLaDOS-SG-02
+    type: ss
+    server: f7efd38.s2.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.microsoft.dk:110705
+  - name: GLaDOS-SG-03
+    type: ss
+    server: f7efd38.s3.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.mozilla.net:110705
+  - name: GLaDOS-HK-01
+    type: ss
+    server: f7efd38.h1.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.blizzard.com:110705
+  - name: GLaDOS-HK-02
+    type: ss
+    server: f7efd38.h2.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.nintendo.de:110705
+  - name: GLaDOS-HK-03
+    type: ss
+    server: f7efd38.h3.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.microsoft.fi:110705
+  - name: GLaDOS-UK-01
+    type: ss
+    server: f7efd38.e1.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.xboxlive.com:110705
+  - name: GLaDOS-UK-02
+    type: ss
+    server: f7efd38.e2.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.nintendo.eu:110705
+  - name: GLaDOS-UK-03
+    type: ss
+    server: f7efd38.e3.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.microsoft.is:110705
+
+  - name: GLaDOS-D1-01
+    type: ss
+    server: f7efd38.da.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.fastly.net:110705
+  - name: GLaDOS-D1-02
+    type: ss
+    server: f7efd38.db.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.microsoft.io:110705
+  - name: GLaDOS-D1-03
+    type: ss
+    server: f7efd38.dc.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.microsoft.it:110705
 
   - name: GLaDOS-S1-01
     type: ss
-    server: f7efd38.f1.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.nintendo.it.net:110705
-  - name: GLaDOS-S1-02
-    type: ss
-    server: f7efd38.f2.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.nintendo.com.net:110705
-  - name: GLaDOS-S1-03
-    type: ss
-    server: f7efd38.f3.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.fastly.net.net:110705
-
-
-
-
-  - name: GLaDOS-TW-1-Netflix
-    type: ss
-    server: f7efd38.d1.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.ee.net:110705
-  - name: GLaDOS-TW-2-Netflix
-    type: ss
-    server: f7efd38.d2.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.de.net:110705
-  - name: GLaDOS-TW-3-Netflix
-    type: ss
-    server: f7efd38.d3.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.de.net:110705
-  - name: GLaDOS-US-4-Netflix
-    type: ss
-    server: f7efd38.d4.glados-config.net
+    server: f7efd38.f1.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
@@ -479,19 +415,9 @@ proxies:
     plugin-opts:
       mode: tls
       host: f7efd38.dl.microsoft.hu.net:110705
-  - name: GLaDOS-US-5-Netflix
+  - name: GLaDOS-S1-02
     type: ss
-    server: f7efd38.d5.glados-config.net
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.eu.net:110705
-  - name: GLaDOS-US-6-Netflix
-    type: ss
-    server: f7efd38.d6.glados-config.net
+    server: f7efd38.f2.gladns.com
     port: 2377
     cipher: chacha20-ietf-poly1305
     password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
@@ -499,6 +425,80 @@ proxies:
     plugin-opts:
       mode: tls
       host: f7efd38.dl.nintendo.net.net:110705
+  - name: GLaDOS-S1-03
+    type: ss
+    server: f7efd38.f3.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.nintendo.jp.net:110705
+
+
+
+
+  - name: GLaDOS-TW-1-Netflix
+    type: ss
+    server: f7efd38.d1.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.epicgames.com.net:110705
+  - name: GLaDOS-TW-2-Netflix
+    type: ss
+    server: f7efd38.d2.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.nintendo.net.net:110705
+  - name: GLaDOS-TW-3-Netflix
+    type: ss
+    server: f7efd38.d3.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.microsoft.cz.net:110705
+  - name: GLaDOS-US-4-Netflix
+    type: ss
+    server: f7efd38.d4.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.microsoft.md.net:110705
+  - name: GLaDOS-US-5-Netflix
+    type: ss
+    server: f7efd38.d5.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.nintendo.jp.net:110705
+  - name: GLaDOS-US-6-Netflix
+    type: ss
+    server: f7efd38.d6.gladns.com
+    port: 2377
+    cipher: chacha20-ietf-poly1305
+    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
+    plugin: obfs
+    plugin-opts:
+      mode: tls
+      host: f7efd38.dl.microsoft.it.net:110705
 
   - name: GLaDOS-R1-01
     type: ss
