@@ -1,1313 +1,247 @@
-# GLaDOS
-# GLobal Local and Destination Operating System
-# Clash Config File for ClashforWindows/0.20.33-428407-21-13
-# Generated at Fri Mar 08 2024 08:37:22 GMT+0000 (Coordinated Universal Time) by Aperture Science
-# ░██████╗░██╗░░░░░░█████╗░██████╗░░█████╗░░██████╗
-# ██╔════╝░██║░░░░░██╔══██╗██╔══██╗██╔══██╗██╔════╝
-# ██║░░██╗░██║░░░░░███████║██║░░██║██║░░██║╚█████╗░
-# ██║░░╚██╗██║░░░░░██╔══██║██║░░██║██║░░██║░╚═══██╗
-# ╚██████╔╝███████╗██║░░██║██████╔╝╚█████╔╝██████╔╝
-# ░╚═════╝░╚══════╝╚═╝░░╚═╝╚═════╝░░╚════╝░╚═════╝░
-# port of HTTP
-port: 7890
-
-# port of SOCKS5
-socks-port: 7891
-
-allow-lan: false
-
-# Rule / Global/ DIRECT (default is Rule)
-mode: rule
-
-
-# set log level to stdout (default is info)
-# info / warning / error / debug
-log-level: info
-
-# A RESTful API for clash
-external-controller: 127.0.0.1:9090
-
-# Secret for RESTful API (Optional)
-secret: ""
-
-dns:
-  enable: false # set true to enable dns (default is false)
-  listen: 127.0.0.1:7053
-  nameserver:
-     - 119.29.29.29
-     - 114.114.114.114
-  fallback: # concurrent request with nameserver, fallback used when GEOIP country isn't CN
-     - https://1.1.1.1/dns-query
-     - tls://1.0.0.1:853
-
-
 proxies:
-  - name: GLaDOS-B1-01
-    type: ss
-    server: f7efd38.b1.gladns.com
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.cat:110705
-  - name: GLaDOS-B1-02
-    type: ss
-    server: f7efd38.b2.gladns.com
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.nintendo.es:110705
-  - name: GLaDOS-B1-03
-    type: ss
-    server: f7efd38.b3.gladns.com
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.ge:110705
-  - name: GLaDOS-B1-04
-    type: ss
-    server: f7efd38.b4.gladns.com
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.nintendo.de:110705
-  - name: GLaDOS-B1-05
-    type: ss
-    server: f7efd38.b5.gladns.com
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.xboxlive.com:110705
-  - name: GLaDOS-B1-06
-    type: ss
-    server: f7efd38.b6.gladns.com
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.mozilla.net:110705
-  - name: GLaDOS-B1-07
-    type: ss
-    server: f7efd38.b7.gladns.com
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.com:110705
-  - name: GLaDOS-B1-08
-    type: ss
-    server: f7efd38.b8.gladns.com
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.nintendo.it:110705
-  - name: GLaDOS-B1-09
-    type: ss
-    server: f7efd38.b9.gladns.com
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.nvidia.com:110705
-
-
-  - name: GLaDOS-D1-01
-    type: ss
-    server: f7efd38.da.gladns.com
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.nintendo.jp:110705
-  - name: GLaDOS-D1-02
-    type: ss
-    server: f7efd38.db.gladns.com
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.fi:110705
-  - name: GLaDOS-D1-03
-    type: ss
-    server: f7efd38.dc.gladns.com
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.jp:110705
-
-  - name: GLaDOS-S1-01
-    type: ss
-    server: f7efd38.f1.gladns.com
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.de.net:110705
-  - name: GLaDOS-S1-02
-    type: ss
-    server: f7efd38.f2.gladns.com
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.microsoft.ch.net:110705
-  - name: GLaDOS-S1-03
-    type: ss
-    server: f7efd38.f3.gladns.com
-    port: 2377
-    cipher: chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: obfs
-    plugin-opts:
-      mode: tls
-      host: f7efd38.dl.epicgames.com.net:110705
-
-
-  - name: GLaDOS-R1-01
-    type: ss
-    server: f7efd38.qa.glados-config.com
-    port: 8880
-    cipher:  chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      tls: false
-      host: endpoint.moss.network
-      path: "/9daad54c-7685-402c-8a97-e6a04ec7cb11/connect"
-      mux: true
-      headers:
-       edge: f7efd38.fm.huawei.com:110705
-  - name: GLaDOS-R1-02
-    type: ss
-    server: f7efd38.qb.glados-config.com
-    port: 8880
-    cipher:  chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      tls: false
-      host: endpoint.moss.network
-      path: "/9daad54c-7685-402c-8a97-e6a04ec7cb11/connect"
-      mux: true
-      headers:
-       edge: f7efd38.fm.huawei.com:110705
-  - name: GLaDOS-R1-03
-    type: ss
-    server: f7efd38.qc.glados-config.com
-    port: 8880
-    cipher:  chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      tls: false
-      host: endpoint.moss.network
-      path: "/9daad54c-7685-402c-8a97-e6a04ec7cb11/connect"
-      mux: true
-      headers:
-       edge: f7efd38.fm.huawei.com:110705
-  - name: GLaDOS-R1-04
-    type: ss
-    server: f7efd38.qd.glados-config.com
-    port: 8880
-    cipher:  chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      tls: false
-      host: intrepid.moss.network
-      path: "/9daad54c-7685-402c-8a97-e6a04ec7cb11/connect"
-      mux: true
-      headers:
-       edge: f7efd38.fm.huawei.com:110705
-  - name: GLaDOS-R1-05
-    type: ss
-    server: f7efd38.qe.glados-config.com
-    port: 8880
-    cipher:  chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      tls: false
-      host: intrepid.moss.network
-      path: "/9daad54c-7685-402c-8a97-e6a04ec7cb11/connect"
-      mux: true
-      headers:
-       edge: f7efd38.fm.huawei.com:110705
-  - name: GLaDOS-R1-06
-    type: ss
-    server: f7efd38.qf.glados-config.com
-    port: 8880
-    cipher:  chacha20-ietf-poly1305
-    password: "t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv"
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      tls: false
-      host: intrepid.moss.network
-      path: "/9daad54c-7685-402c-8a97-e6a04ec7cb11/connect"
-      mux: true
-      headers:
-       edge: f7efd38.fm.huawei.com:110705
-
-proxy-groups:
-  - name: Auto-Fast
-    type: "url-test"
-    url: "http://www.gstatic.cn/generate_204"
-    interval: 300
-    tolerance: 100
-    proxies:
-        - GLaDOS-B1-01
-        - GLaDOS-B1-02
-        - GLaDOS-B1-03
-        - GLaDOS-B1-04
-        - GLaDOS-B1-05
-        - GLaDOS-B1-06
-        - GLaDOS-B1-07
-        - GLaDOS-B1-08
-        - GLaDOS-R1-01
-        - GLaDOS-R1-02
-  - name: Auto-Edge
-    type: "url-test"
-    url: "http://www.gstatic.cn/generate_204"
-    interval: 900
-    tolerance: 100
-    proxies:
-        - GLaDOS-B1-06
-        - GLaDOS-B1-07
-        - GLaDOS-B1-08
-        - GLaDOS-B1-09
-        - GLaDOS-R1-01
-        - GLaDOS-R1-02
-        - GLaDOS-R1-03
-        - GLaDOS-R1-04
-        - GLaDOS-R1-05
-        - GLaDOS-R1-06
-  - name: Auto-Failover
-    type: "url-test"
-    url: "http://www.gstatic.cn/generate_204"
-    interval: 1800
-    tolerance: 100
-    proxies:
-        - GLaDOS-US-01
-        - GLaDOS-US-02
-        - GLaDOS-US-03
-        - GLaDOS-US-04
-        - GLaDOS-US-05
-        - GLaDOS-US-06
-        - GLaDOS-JP-01
-        - GLaDOS-JP-02
-        - GLaDOS-JP-03
-        - GLaDOS-TW-01
-        - GLaDOS-TW-02
-        - GLaDOS-TW-03
-        - GLaDOS-TW-04
-        - GLaDOS-TW-05
-        - GLaDOS-TW-06
-        - GLaDOS-SG-01
-        - GLaDOS-SG-02
-        - GLaDOS-SG-03
-        - GLaDOS-HK-01
-        - GLaDOS-HK-02
-        - GLaDOS-HK-03
-        - GLaDOS-UK-01
-        - GLaDOS-UK-02
-        - GLaDOS-UK-03
-  - name: Express
-    type: "fallback"
-    url: "http://www.gstatic.cn/generate_204"
-    interval: 900
-    tolerance: 50
-    proxies:
-        - Auto-Edge
-        - Auto-Fast
-        - Auto-Failover
-  - name: Auto
-    type: "fallback"
-    url: "http://www.gstatic.cn/generate_204"
-    interval: 600
-    proxies:
-        - Auto-Fast
-        - Auto-Edge
-        - Auto-Failover
-  - name: Proxy
-    type: "select"
-    proxies:
-        - "Auto"
-        - GLaDOS-US-01
-        - GLaDOS-US-02
-        - GLaDOS-US-03
-        - GLaDOS-US-04
-        - GLaDOS-US-05
-        - GLaDOS-US-06
-        - GLaDOS-JP-01
-        - GLaDOS-JP-02
-        - GLaDOS-JP-03
-        - GLaDOS-TW-01
-        - GLaDOS-TW-02
-        - GLaDOS-TW-03
-        - GLaDOS-TW-04
-        - GLaDOS-TW-05
-        - GLaDOS-TW-06
-        - GLaDOS-SG-01
-        - GLaDOS-SG-02
-        - GLaDOS-SG-03
-        - GLaDOS-HK-01
-        - GLaDOS-HK-02
-        - GLaDOS-HK-03
-        - GLaDOS-UK-01
-        - GLaDOS-UK-02
-        - GLaDOS-UK-03
-        - GLaDOS-D1-01
-        - GLaDOS-D1-02
-        - GLaDOS-D1-03
-  - name: Video
-    type: "select"
-    interval: 900
-    url: "http://www.gstatic.cn/generate_204"
-    proxies:
-        - Express
-        - GLaDOS-US-01
-        - GLaDOS-US-02
-        - GLaDOS-US-03
-        - GLaDOS-US-04
-        - GLaDOS-US-05
-        - GLaDOS-US-06
-        - GLaDOS-JP-01
-        - GLaDOS-JP-02
-        - GLaDOS-JP-03
-        - GLaDOS-TW-01
-        - GLaDOS-TW-02
-        - GLaDOS-TW-03
-        - GLaDOS-TW-04
-        - GLaDOS-TW-05
-        - GLaDOS-TW-06
-        - GLaDOS-SG-01
-        - GLaDOS-SG-02
-        - GLaDOS-SG-03
-        - GLaDOS-HK-01
-        - GLaDOS-HK-02
-        - GLaDOS-HK-03
-        - GLaDOS-UK-01
-        - GLaDOS-UK-02
-        - GLaDOS-UK-03
-        - GLaDOS-D1-01
-        - GLaDOS-D1-02
-        - GLaDOS-D1-03
-  - name: Netflix
-    type: "select"
-    url: "http://www.gstatic.cn/generate_204"
-    interval: 1200
-    proxies:
-        - GLaDOS-TW-1-Netflix
-        - GLaDOS-TW-2-Netflix
-        - GLaDOS-TW-3-Netflix
-        - GLaDOS-US-4-Netflix
-        - GLaDOS-US-5-Netflix
-        - GLaDOS-US-6-Netflix
-        - Auto-Edge
-        - DIRECT
-  - name: Scholar
-    type: "select"
-    proxies:
-        - GLaDOS-S1-01
-        - GLaDOS-S1-02
-        - GLaDOS-S1-03
-        - Proxy
-        - DIRECT
-  - name: Steam
-    type: "select"
-    proxies:
-        - GLaDOS-D1-01
-        - GLaDOS-D1-02
-        - GLaDOS-D1-03
-        - Auto-Edge
-        - DIRECT
-
-rules:
-#user rules
-
-#EMAIL port
-- DST-PORT,25,DIRECT
-- DST-PORT,26,DIRECT
-- DST-PORT,465,DIRECT
-- DST-PORT,587,DIRECT
-- DST-PORT,2525,DIRECT
-
-# BT
-- DST-PORT,6881,DIRECT
-- DST-PORT,6882,DIRECT
-- DST-PORT,6883,DIRECT
-- DST-PORT,6884,DIRECT
-- DST-PORT,6885,DIRECT
-- DST-PORT,6886,DIRECT
-- DST-PORT,6887,DIRECT
-- DST-PORT,6888,DIRECT
-- DST-PORT,6889,DIRECT
-
-# check first
-- DOMAIN-SUFFIX,qq.com,DIRECT
-- DOMAIN-SUFFIX,taobao.com,DIRECT
-- DOMAIN-SUFFIX,baidu.com,DIRECT
-- DOMAIN-SUFFIX,weibo.com,DIRECT
-- DOMAIN-SUFFIX,jd.com,DIRECT
-- DOMAIN-SUFFIX,tmall.com,DIRECT
-- DOMAIN-SUFFIX,360.cn,DIRECT
-- DOMAIN-SUFFIX,zhihu.com,DIRECT
-- DOMAIN-SUFFIX,com.cn,DIRECT
-
-# allowed safe trackers
-- DOMAIN,graph.instagram.com,DIRECT
-- DOMAIN,www.googleadservices.com,DIRECT
-- DOMAIN,control.kochava.com,DIRECT
-- DOMAIN,www.google-analytics.com,DIRECT
-- DOMAIN,ssl.google-analytics.com,DIRECT
-- DOMAIN,nexus.officeapps.live.com,DIRECT
-- DOMAIN,googleads.g.doubleclick.net,DIRECT
-- DOMAIN,e.crashlytics.com,DIRECT
-- DOMAIN,ib.adnxs.com,DIRECT
-- DOMAIN,safebrowsing.googleapis.com,DIRECT
-- DOMAIN-SUFFIX,googlesyndication.com,DIRECT
-- DOMAIN-SUFFIX,googletagmanager.com,DIRECT
-- DOMAIN-SUFFIX,googletagservices.com,DIRECT
-
-#specific geo services
-- DOMAIN-SUFFIX,paypal.com,Proxy
-- DOMAIN-SUFFIX,stripe.com,Proxy
-- DOMAIN-SUFFIX,bing.com,Proxy
-
-##tiktok
-- DOMAIN-SUFFIX,byteoversea.com,GLaDOS-US-01
-- DOMAIN-SUFFIX,muscdn.com,GLaDOS-US-01
-- DOMAIN-SUFFIX,musical.ly,GLaDOS-US-01
-- DOMAIN-SUFFIX,tik-tokapi.com,GLaDOS-US-01
-- DOMAIN-SUFFIX,tiktokcdn.com,GLaDOS-US-01
-- DOMAIN-SUFFIX,tiktok.com,GLaDOS-US-01
-- DOMAIN-SUFFIX,tiktokv.com,GLaDOS-US-01
-
-#specific scholar services
-- DOMAIN-KEYWORD,scholar,Scholar
-- DOMAIN-KEYWORD,openai,Scholar
-- DOMAIN-SUFFIX,openai.com,Scholar
-- DOMAIN-SUFFIX,chatgpt.com,Scholar
-- DOMAIN-SUFFIX,oaistatic.com,Scholar
-- DOMAIN-SUFFIX,oaiusercontent.com,Scholar
-- DOMAIN-SUFFIX,ai.com,Scholar
-
-- DOMAIN-SUFFIX,hotmail.com,Proxy
-- DOMAIN-SUFFIX,slack.com,Proxy
-- DOMAIN-SUFFIX,live.com,Proxy
-- DOMAIN-SUFFIX,figma.com,Proxy
-- DOMAIN-SUFFIX,firefox.com,Proxy
-- DOMAIN-SUFFIX,notion.com,Proxy
-- DOMAIN-SUFFIX,x.com,Proxy
-- DOMAIN-SUFFIX,reddit.com,Proxy
-- DOMAIN-SUFFIX,office.com,Proxy
-- DOMAIN-SUFFIX,twimg.com,Proxy
-- DOMAIN-SUFFIX,pinterest.com,Proxy
-- DOMAIN-SUFFIX,auth0.com,Proxy
-- DOMAIN,openaiapi-site.azureedge.net,Proxy
-- DOMAIN-SUFFIX,rxiv.org,Proxy
-- DOMAIN-SUFFIX,acrjournals.org,Proxy
-- DOMAIN-SUFFIX,cademic.eb.com,Proxy
-- DOMAIN-SUFFIX,caric.co.jp,Proxy
-- DOMAIN-SUFFIX,clweb.org,Proxy
-- DOMAIN-SUFFIX,cm.org,Proxy
-- DOMAIN-SUFFIX,cs.org,Proxy
-- DOMAIN-SUFFIX,gu.org,Proxy
-- DOMAIN-SUFFIX,iaa.org,Proxy
-- DOMAIN-SUFFIX,imsciences.org,Proxy
-- DOMAIN-SUFFIX,ms.org,Proxy
-- DOMAIN-SUFFIX,natomy.tv,Proxy
-- DOMAIN-SUFFIX,nalytictech.com,Proxy
-- DOMAIN-SUFFIX,nnualreviews.org,Proxy
-- DOMAIN-SUFFIX,ps.org,Proxy
-- DOMAIN-SUFFIX,rabidopsis.org,Proxy
-- DOMAIN-SUFFIX,rtstor.org,Proxy
-- DOMAIN-SUFFIX,scelibrary.org,Proxy
-- DOMAIN-SUFFIX,sha.org,Proxy
-- DOMAIN-SUFFIX,sm.org,Proxy
-- DOMAIN-SUFFIX,sme.org,Proxy
-- DOMAIN-SUFFIX,sminternational.org,Proxy
-- DOMAIN-SUFFIX,sn-online.org,Proxy
-- DOMAIN-SUFFIX,spbjournals.org,Proxy
-- DOMAIN-SUFFIX,spenpublishing.com,Proxy
-- DOMAIN-SUFFIX,stm.org,Proxy
-- DOMAIN-SUFFIX,siam.org,Proxy
-
-#github
-- DOMAIN-KEYWORD,github,Proxy
-- DOMAIN-SUFFIX,atom.io,Proxy
-- DOMAIN-SUFFIX,dependabot.com,Proxy
-- DOMAIN-SUFFIX,ghcr.io,Proxy
-- DOMAIN-SUFFIX,git.io,Proxy
-- DOMAIN-SUFFIX,myoctocat.com,Proxy
-- DOMAIN-SUFFIX,npm.community,Proxy
-- DOMAIN-SUFFIX,npmjs.com,Proxy
-- DOMAIN-SUFFIX,npmjs.org,Proxy
-- DOMAIN-SUFFIX,opensource.guide,Proxy
-- DOMAIN-SUFFIX,rawgit.com,Proxy
-- DOMAIN-SUFFIX,repo.new,Proxy
-
-#discord
-- DOMAIN-KEYWORD,discord,Proxy
-- DOMAIN-SUFFIX,airhorn.solutions,Proxy
-- DOMAIN-SUFFIX,airhornbot.com,Proxy
-- DOMAIN-SUFFIX,bigbeans.solutions,Proxy
-- DOMAIN-SUFFIX,dis.gd,Proxy
-
-#dev
-- DOMAIN-SUFFIX,gstatic.com,Proxy
-- DOMAIN-SUFFIX,google.com,Proxy
-- DOMAIN-SUFFIX,figma.com,Proxy
-- DOMAIN-SUFFIX,v2ex.com,Proxy
-- DOMAIN-KEYWORD,gitlab,Proxy
-- DOMAIN-KEYWORD,github,Proxy
-- DOMAIN-KEYWORD,npm,Proxy
-- DOMAIN-KEYWORD,stackoverflow.com,Proxy
-- DOMAIN-SUFFIX,techcrunch.com,Proxy
-- DOMAIN-SUFFIX,go-lang.com,Proxy
-- DOMAIN-SUFFIX,go-lang.net,Proxy
-- DOMAIN-SUFFIX,go-lang.org,Proxy
-- DOMAIN-SUFFIX,go.dev,Proxy
-- DOMAIN-SUFFIX,godoc.org,Proxy
-- DOMAIN-SUFFIX,golang.com,Proxy
-- DOMAIN-SUFFIX,golang.net,Proxy
-- DOMAIN-SUFFIX,golang.org,Proxy
-- DOMAIN-SUFFIX,trello.com,Proxy
-- DOMAIN-SUFFIX,techsmith.com,Proxy
-- DOMAIN-SUFFIX,thepiratebay.org,Proxy
-
-# > IQIYI
-- DOMAIN-KEYWORD,qiyi,DIRECT
-- DOMAIN-SUFFIX,qy.net,DIRECT
-- DOMAIN-SUFFIX,letv.com,DIRECT
-- DOMAIN-SUFFIX,71.am,DIRECT
-- DOMAIN-SUFFIX,71edge.com,DIRECT
-- DOMAIN-SUFFIX,iqiyi.com,DIRECT
-- DOMAIN-SUFFIX,iqiyipic.com,DIRECT
-- DOMAIN-SUFFIX,ppsimg.com,DIRECT
-- DOMAIN-SUFFIX,qiyi.com,DIRECT
-- DOMAIN-SUFFIX,qiyipic.com,DIRECT
-- DOMAIN-SUFFIX,qy.net,DIRECT
-
-# > NeteaseMusic
-- DOMAIN-SUFFIX,163yun.com,DIRECT
-- DOMAIN-SUFFIX,music.126.net,DIRECT
-- DOMAIN-SUFFIX,music.163.com,DIRECT
-
-# China CDN
-- DOMAIN-SUFFIX,tnkjmec.com,DIRECT
-- DOMAIN-SUFFIX,clngaa.com,DIRECT
-- DOMAIN-SUFFIX,ksyna.com,DIRECT
-- DOMAIN-SUFFIX,bscstorage.net,DIRECT
-- DOMAIN-SUFFIX,eccdnx.com,DIRECT
-- DOMAIN-SUFFIX,pinyuncloud.com,DIRECT
-- DOMAIN-SUFFIX,8686c.com,DIRECT
-- DOMAIN-SUFFIX,pphimalayanrt.com,DIRECT
-- DOMAIN-SUFFIX,qbox.me,DIRECT
-- DOMAIN-SUFFIX,qiniu.com,DIRECT
-- DOMAIN-SUFFIX,qiniudn.com,DIRECT
-- DOMAIN-SUFFIX,qiniup.com,DIRECT
-- DOMAIN-SUFFIX,qnsdk.com,DIRECT
-- DOMAIN-SUFFIX,qnssl.com,DIRECT
-- DOMAIN-SUFFIX,qiniucdn.com,DIRECT
-- DOMAIN-SUFFIX,qiniudns.com,DIRECT
-- DOMAIN-SUFFIX,sandai.net,DIRECT
-
-# > ByteDance
-- DOMAIN-KEYWORD,toutiao,DIRECT
-- DOMAIN-SUFFIX,bdxiguastatic.com,DIRECT
-- DOMAIN-SUFFIX,bdurl.net,DIRECT
-- DOMAIN-SUFFIX,douyinstatic.com,DIRECT
-- DOMAIN-SUFFIX,douyin.com,DIRECT
-- DOMAIN-SUFFIX,douyinpic.com,DIRECT
-- DOMAIN-SUFFIX,douyinvod.com,DIRECT
-- DOMAIN-SUFFIX,huoshan.com,DIRECT
-- DOMAIN-SUFFIX,huoshanstatic.com,DIRECT
-- DOMAIN-SUFFIX,huoshanzhibo.com,DIRECT
-- DOMAIN-SUFFIX,ixigua.com,DIRECT
-- DOMAIN-SUFFIX,ixiguavideo.com,DIRECT
-- DOMAIN-SUFFIX,ixgvideo.com,DIRECT
-- DOMAIN-SUFFIX,bdxiguaimg.com,DIRECT
-- DOMAIN-SUFFIX,pstatp.com,DIRECT
-- DOMAIN-SUFFIX,snssdk.com,DIRECT
-- DOMAIN-SUFFIX,zijiecdn.com,DIRECT
-- DOMAIN-SUFFIX,zijiecdn.net,DIRECT
-- DOMAIN-SUFFIX,zjbyte.cn,DIRECT
-- DOMAIN-SUFFIX,zjcdn.com,DIRECT
-- DOMAIN-SUFFIX,bytedance.com,DIRECT
-- DOMAIN-SUFFIX,bytedance.net,DIRECT
-- DOMAIN-SUFFIX,bytedns.net,DIRECT
-- DOMAIN-SUFFIX,byteimg.com,DIRECT
-- DOMAIN-SUFFIX,feiliao.com,DIRECT
-- DOMAIN-SUFFIX,gifshow.com,DIRECT
-- DOMAIN-SUFFIX,huoshan.com,DIRECT
-- DOMAIN-SUFFIX,iesdouyin.com,DIRECT
-- DOMAIN-SUFFIX,ixigua.com,DIRECT
-- DOMAIN-SUFFIX,kspkg.com,DIRECT
-- DOMAIN-SUFFIX,pstatp.com,DIRECT
-- DOMAIN-SUFFIX,snssdk.com,DIRECT
-- DOMAIN-SUFFIX,wukong.com,DIRECT
-- DOMAIN-SUFFIX,zijieimg.com,DIRECT
-- DOMAIN-SUFFIX,zjbyte.com,DIRECT
-- DOMAIN-SUFFIX,zjcdn.com,DIRECT
-
-# > Bilibili
-- DOMAIN-KEYWORD,bili,DIRECT
-- DOMAIN-SUFFIX,acg.tv,DIRECT
-- DOMAIN-SUFFIX,acgvideo.com,DIRECT
-- DOMAIN-SUFFIX,b23.tv,DIRECT
-- DOMAIN-SUFFIX,hdslb.com,DIRECT
-- DOMAIN-SUFFIX,im9.com,DIRECT
-
-# > Blizzard
-- DOMAIN-SUFFIX,blizzard.com,DIRECT
-- DOMAIN-SUFFIX,battle.net,DIRECT
-- DOMAIN,blzddist1-a.akamaihd.net,DIRECT
-
-# DIRECT
-- DOMAIN-SUFFIX,digicert.com,DIRECT
-- DOMAIN-SUFFIX,code.visualstudio.com,DIRECT
-
-# CCTV
-- DOMAIN-SUFFIX,cctv.com,DIRECT
-- DOMAIN-SUFFIX,cctvpic.com,DIRECT
-- DOMAIN-SUFFIX,livechina.com,DIRECT
-
-# DiDi
-- DOMAIN-SUFFIX,didialift.com,DIRECT
-- DOMAIN-SUFFIX,didiglobal.com,DIRECT
-- DOMAIN-SUFFIX,udache.com,DIRECT
-
-# Douyu 斗鱼
-- DOMAIN-SUFFIX,douyu.com,DIRECT
-- DOMAIN-SUFFIX,douyu.tv,DIRECT
-- DOMAIN-SUFFIX,douyuscdn.com,DIRECT
-- DOMAIN-SUFFIX,douyutv.com,DIRECT
-
-# HuaWei
-- DOMAIN-SUFFIX,dbankcdn.com,DIRECT
-- DOMAIN-SUFFIX,hc-cdn.com,DIRECT
-- DOMAIN-SUFFIX,hicloud.com,DIRECT
-- DOMAIN-SUFFIX,huawei.com,DIRECT
-- DOMAIN-SUFFIX,huaweicloud.com,DIRECT
-- DOMAIN-SUFFIX,huaweishop.net,DIRECT
-- DOMAIN-SUFFIX,hwccpc.com,DIRECT
-- DOMAIN-SUFFIX,vmall.com,DIRECT
-- DOMAIN-SUFFIX,vmallres.com,DIRECT
-
-# Iflytek
-- DOMAIN-SUFFIX,iflyink.com,DIRECT
-- DOMAIN-SUFFIX,iflyrec.com,DIRECT
-- DOMAIN-SUFFIX,iflytek.com,DIRECT
-
-- DOMAIN,dig.bdurl.net,DIRECT
-- DOMAIN,pagead2.googlesyndication.com,DIRECT
-
-
-# DIRECTEND
-
-# STEAM CDN
-- DOMAIN,csgo.wmsj.cn,Steam
-- DOMAIN,dl.steam.clngaa.com,Steam
-- DOMAIN,dl.steam.ksyna.com,Steam
-- DOMAIN,dota2.wmsj.cn,Steam
-- DOMAIN,st.dl.bscstorage.net,Steam
-- DOMAIN,st.dl.eccdnx.com,Steam
-- DOMAIN,st.dl.pinyuncloud.com,Steam
-- DOMAIN,steampipe.steamcontent.tnkjmec.com,Steam
-- DOMAIN,steampowered.com.8686c.com,Steam
-- DOMAIN,steamstatic.com.8686c.com,Steam
-- DOMAIN,wmsjsteam.com,Steam
-- DOMAIN-SUFFIX,cm.steampowered.com,Steam
-- DOMAIN-SUFFIX,steamchina.com,Steam
-- DOMAIN-SUFFIX,steamcontent.com,Steam
-- DOMAIN-SUFFIX,steamusercontent.com,Steam
-- DOMAIN-SUFFIX,fanatical.com,Steam
-- DOMAIN-SUFFIX,humblebundle.com,Steam
-- DOMAIN-SUFFIX,steamcommunity.com,Steam
-- DOMAIN-SUFFIX,steampowered.com,Steam
-- DOMAIN-SUFFIX,steamstatic.com,Steam
-- DOMAIN-SUFFIX,steam-chat.com,Steam
-- DOMAIN-SUFFIX,steamusercontent.com,Steam
-- DOMAIN-SUFFIX,valvesoftware.com,Steam
-- DOMAIN-KEYWORD,steamuserimages,Steam
-- DOMAIN-KEYWORD,steamcontent,Steam
-- DOMAIN,steambroadcast.akamaized.net,Steam
-- DOMAIN,steamcdn-a.akamaihd.net,Steam
-- DOMAIN,steamcommunity-a.akamaihd.net,Steam
-- DOMAIN,steampipe.akamaized.net,Steam
-- DOMAIN,steamstore-a.akamaihd.net,Steam
-- DOMAIN,steamusercontent-a.akamaihd.net,Steam
-- DOMAIN,steamuserimages-a.akamaihd.net,Steam
-- DOMAIN-SUFFIX,fanatical.com,Steam
-- DOMAIN-SUFFIX,humblebundle.com,Steam
-- DOMAIN-SUFFIX,playartifact.com,Steam
-- DOMAIN-SUFFIX,steam-chat.com,Steam
-- DOMAIN-SUFFIX,steamcommunity.com,Steam
-- DOMAIN-SUFFIX,steamgames.com,Steam
-- DOMAIN-SUFFIX,steampowered.com,Steam
-- DOMAIN-SUFFIX,steamserver.net,Steam
-- DOMAIN-SUFFIX,steamstat.us,Steam
-- DOMAIN-SUFFIX,steamstatic.com,Steam
-- DOMAIN-SUFFIX,underlords.com,Steam
-- DOMAIN-SUFFIX,valvesoftware.com,Steam
-
-# Epic
-- DOMAIN-SUFFIX,epicgames.com,Steam
-- DOMAIN-SUFFIX,helpshift.com,Steam
-- DOMAIN-SUFFIX,paragon.com,Steam
-- DOMAIN-SUFFIX,unrealengine.com,Steam
-- DOMAIN-SUFFIX,ol.epicgames.com,Steam
-
-# > Epicgames
-- DOMAIN-KEYWORD,epicgames,Steam
-- DOMAIN-SUFFIX,helpshift.com,Steam
-
-# debug
-- DOMAIN,ip.sb,Proxy
-- DOMAIN,myip.ipip.net,Video
-- DOMAIN,ifconfig.me,Netflix
-
-# hot fix
-- DOMAIN,services.googleapis.cn,Proxy
-- DOMAIN,googleapis.cn,Proxy
-- DOMAIN-SUFFIX,ping.pe,Proxy
-- DOMAIN-SUFFIX,f2pool.com,Proxy
-- DOMAIN-SUFFIX,static.wikia.nocookie.net,Proxy
-- DOMAIN-SUFFIX,cc98.org,DIRECT
-
-# common site
-- DOMAIN,services.googleapis.cn,Proxy
-- DOMAIN,google.com,Proxy
-- DOMAIN-SUFFIX,google.cn,Proxy
-- DOMAIN-SUFFIX,googleapis.cn,Proxy
-- DOMAIN-KEYWORD,facebook,Proxy
-- DOMAIN-SUFFIX,fb.me,Proxy
-- DOMAIN-KEYWORD,gmail,Proxy
-- DOMAIN-KEYWORD,twitter,Proxy
-- DOMAIN-KEYWORD,instagram,Proxy
-- DOMAIN-SUFFIX,twimg.com,Proxy
-- DOMAIN-KEYWORD,blogspot,Proxy
-- DOMAIN-KEYWORD,whatsapp,Proxy
-- DOMAIN-KEYWORD,glados,Proxy
-- DOMAIN-KEYWORD,wikipedia,Proxy
-- DOMAIN-SUFFIX,google.com,Proxy
-- DOMAIN-SUFFIX,facebook.com,Proxy
-- DOMAIN-SUFFIX,yahoo.com,Proxy
-- DOMAIN-SUFFIX,amazon.com,Proxy
-- DOMAIN-SUFFIX,vk.com,Proxy
-- DOMAIN-SUFFIX,reddit.com,Proxy
-- DOMAIN-SUFFIX,live.com,Proxy
-- DOMAIN-SUFFIX,zoom.us,Proxy
-- DOMAIN-SUFFIX,wikipedia.org,Proxy
-- DOMAIN-SUFFIX,myshopify.com,Proxy
-- DOMAIN-SUFFIX,instagram.com,Proxy
-- DOMAIN-SUFFIX,okezone.com,Proxy
-- DOMAIN-SUFFIX,office.com,Proxy
-- DOMAIN-SUFFIX,ebay.com,Proxy
-- DOMAIN-SUFFIX,bongacams.com,Proxy
-- DOMAIN-SUFFIX,blogspot.com,Proxy
-- DOMAIN-SUFFIX,yahoo.co.jp,Proxy
-- DOMAIN-SUFFIX,babytree.com,Proxy
-- DOMAIN-SUFFIX,amazon.co.jp,Proxy
-- DOMAIN-SUFFIX,adobe.com,Proxy
-- DOMAIN-SUFFIX,livejasmin.com,Proxy
-- DOMAIN-SUFFIX,stackoverflow.com,Proxy
-- DOMAIN-SUFFIX,dropbox.com,Proxy
-- DOMAIN-SUFFIX,msn.com,Proxy
-- DOMAIN-SUFFIX,yandex.ru,Proxy
-- DOMAIN-SUFFIX,linkedin.com,Proxy
-- DOMAIN-SUFFIX,twitter.com,Proxy
-- DOMAIN-SUFFIX,imgur.com,Proxy
-- DOMAIN-SUFFIX,amazonaws.com,Proxy
-- DOMAIN-SUFFIX,imdb.com,Proxy
-- DOMAIN-SUFFIX,whatsapp.com,Proxy
-- DOMAIN-SUFFIX,google.co.jp,Proxy
-- DOMAIN-SUFFIX,wordpress.com,Proxy
-- DOMAIN-SUFFIX,nytimes.com,Proxy
-- DOMAIN-SUFFIX,spotify.com,Proxy
-
-# Proxy CDN
-- DOMAIN-SUFFIX,s3.amazonaws.com,Video
-- DOMAIN-KEYWORD,akam,Video
-
-# Video
-- DOMAIN-KEYWORD,youtube,Video
-- DOMAIN,lybmc.com,DIRECT
-- DOMAIN,dayi.com,Video
-- DOMAIN-SUFFIX,phncdn.com,Video
-- DOMAIN-SUFFIX,phprcdn.com,Video
-- DOMAIN-SUFFIX,youtu.be,Video
-- DOMAIN-SUFFIX,ytimg.com,Video
-- DOMAIN-KEYWORD,twitch,Video
-- DOMAIN-SUFFIX,googlevideo.com,Video
-- DOMAIN-SUFFIX,googleusercontent.com,Video
-
-#Netflix
-- DOMAIN-KEYWORD,netflix,Netflix
-- DOMAIN-SUFFIX,netflix.com,Netflix
-- DOMAIN-SUFFIX,netflix.net,Netflix
-- DOMAIN-SUFFIX,nflxext.com,Netflix
-- DOMAIN-SUFFIX,nflximg.com,Netflix
-- DOMAIN-SUFFIX,nflximg.net,Netflix
-- DOMAIN-SUFFIX,nflxso.net,Netflix
-- DOMAIN-KEYWORD,dualstack.apiproxy-,Netflix
-- DOMAIN-KEYWORD,dualstack.ichnaea-web-,Netflix
-- DOMAIN-SUFFIX,netflix.com.edgesuite.net,Netflix
-- DOMAIN-SUFFIX,us-west-2.amazonaws.com,Netflix
-- DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,Netflix
-- DOMAIN-KEYWORD,ichnaea-web-,Netflix
-- DOMAIN,netflix.com.edgesuite.net,Netflix
-- DOMAIN-SUFFIX,netflix.com,Netflix
-- DOMAIN-SUFFIX,netflix.net,Netflix
-- DOMAIN-SUFFIX,nflxext.com,Netflix
-- DOMAIN-SUFFIX,nflximg.com,Netflix
-- DOMAIN-SUFFIX,nflximg.net,Netflix
-- DOMAIN-SUFFIX,nflxso.net,Netflix
-- DOMAIN-SUFFIX,nflxvideo.net,Netflix
-
-# > Fox+
-- DOMAIN-KEYWORD,foxplus,Netflix
-- DOMAIN-SUFFIX,config.fox.com,Netflix
-- DOMAIN-SUFFIX,emome.net,Netflix
-- DOMAIN-SUFFIX,fox.com,Netflix
-- DOMAIN-SUFFIX,foxdcg.com,Netflix
-- DOMAIN-SUFFIX,foxnow.com,Netflix
-- DOMAIN-SUFFIX,foxplus.com,Netflix
-- DOMAIN-SUFFIX,foxplay.com,Netflix
-- DOMAIN-SUFFIX,ipinfo.io,Netflix
-- DOMAIN-SUFFIX,mstage.io,Netflix
-- DOMAIN-SUFFIX,now.com,Netflix
-- DOMAIN-SUFFIX,theplatform.com,Netflix
-- DOMAIN-SUFFIX,urlload.net,Netflix
-
-# > HBO && HBO Go
-- DOMAIN-SUFFIX,hbo.com,Netflix
-- DOMAIN-SUFFIX,hboasia.com,Netflix
-- DOMAIN-SUFFIX,hbogo.com,Netflix
-- DOMAIN-SUFFIX,hbogoasia.hk,Netflix
-
-# > Hulu
-- DOMAIN-SUFFIX,hulu.com,Netflix
-- DOMAIN-SUFFIX,huluim.com,Netflix
-- DOMAIN-SUFFIX,hulustream.com,Netflix
-
-#Fast.com
-- DOMAIN-SUFFIX,fast.com,Netflix
-- DOMAIN-SUFFIX,oca.nflxvideo.net,Netflix
-- DOMAIN-SUFFIX,nflxvideo.net,Netflix
-
-- DOMAIN,cdn.registerdisney.go.com,Netflix
-- DOMAIN-SUFFIX,adobedtm.com,Netflix
-- DOMAIN-SUFFIX,bam.nr-data.net,Netflix
-- DOMAIN-SUFFIX,bamgrid.com,Netflix
-- DOMAIN-SUFFIX,braze.com,Netflix
-- DOMAIN-SUFFIX,cdn.optimizely.com,Netflix
-- DOMAIN-SUFFIX,cdn.registerdisney.go.com,Netflix
-- DOMAIN-SUFFIX,cws.conviva.com,Netflix
-- DOMAIN-SUFFIX,d9.flashtalking.com,Netflix
-- DOMAIN-SUFFIX,disney-plus.net,Netflix
-- DOMAIN-SUFFIX,disney-portal.my.onetrust.com,Netflix
-- DOMAIN-SUFFIX,disney.demdex.net,Netflix
-- DOMAIN-SUFFIX,disney.my.sentry.io,Netflix
-- DOMAIN-SUFFIX,disneyplus.bn5x.net,Netflix
-- DOMAIN-SUFFIX,disneyplus.com,Netflix
-- DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net,Netflix
-- DOMAIN-SUFFIX,disneystreaming.com,Netflix
-- DOMAIN-SUFFIX,dssott.com,Netflix
-- DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,Netflix
-- DOMAIN-SUFFIX,js-agent.newrelic.com,Netflix
-
-# > ABC
-- DOMAIN-SUFFIX,edgedatg.com,Video
-- DOMAIN-SUFFIX,go.com,Video
-
-# > AbemaTV
-- DOMAIN,linear-abematv.akamaized.net,Video
-- DOMAIN-SUFFIX,abema.io,Video
-- DOMAIN-SUFFIX,abema.tv,Video
-- DOMAIN-SUFFIX,akamaized.net,Video
-- DOMAIN-SUFFIX,ameba.jp,Video
-- DOMAIN-SUFFIX,hayabusa.io,Video
-
-# > Amazon Prime Video
-- DOMAIN-SUFFIX,aiv-cdn.net,Video
-- DOMAIN-SUFFIX,amazonaws.com,Video
-- DOMAIN-SUFFIX,amazonvideo.com,Video
-- DOMAIN-SUFFIX,llnwd.net,Video
-
-# > Bahamut
-- DOMAIN-SUFFIX,bahamut.com.tw,Netflix
-- DOMAIN-SUFFIX,gamer.com.tw,Netflix
-- DOMAIN-SUFFIX,hinet.net,Netflix
-
-# > BBC
-- DOMAIN-KEYWORD,bbcfmt,Video
-- DOMAIN-KEYWORD,co.uk,Video
-- DOMAIN-KEYWORD,uk-live,Video
-- DOMAIN-SUFFIX,bbc.co,Video
-- DOMAIN-SUFFIX,bbc.co.uk,Video
-- DOMAIN-SUFFIX,bbc.com,Video
-- DOMAIN-SUFFIX,bbci.co,Video
-- DOMAIN-SUFFIX,bbci.co.uk,Video
-
-# > CHOCO TV
-- DOMAIN-SUFFIX,chocotv.com.tw,Video
-
-
-# > Imkan
-- DOMAIN-SUFFIX,imkan.tv,Video
-
-# > JOOX
-- DOMAIN-SUFFIX,joox.com,Video
-
-# > MytvSUPER
-- DOMAIN-KEYWORD,nowtv100,Video
-- DOMAIN-KEYWORD,rthklive,Video
-- DOMAIN-SUFFIX,mytvsuper.com,Video
-- DOMAIN-SUFFIX,tvb.com,Video
-
-# > Pandora
-- DOMAIN-SUFFIX,pandora.com,Video
-
-# > Sky GO
-- DOMAIN-SUFFIX,sky.com,Video
-- DOMAIN-SUFFIX,skygo.co.nz,Video
-
-# > Spotify
-- DOMAIN-KEYWORD,spotify,Video
-- DOMAIN-SUFFIX,scdn.co,Video
-- DOMAIN-SUFFIX,spoti.fi,Video
-
-# > viuTV
-- DOMAIN-SUFFIX,viu.tv,Video
-
-# > Youtube
-- DOMAIN-KEYWORD,youtube,Video
-- DOMAIN-SUFFIX,googlevideo.com,Video
-- DOMAIN-SUFFIX,gvt2.com,Video
-- DOMAIN-SUFFIX,youtu.be,Video
-- DOMAIN-SUFFIX,youtu.be,Video
-- DOMAIN-SUFFIX,yt.be,Video
-- DOMAIN-SUFFIX,ytimg.com,Video
-- DOMAIN-KEYWORD,pornhub,Video
-- DOMAIN-KEYWORD,porn,Video
-- DOMAIN-KEYWORD,phncdn,Video
-- DOMAIN-SUFFIX,vimeo.com,Video
-- DOMAIN-SUFFIX,vimeocdn.com,Video
-
-# > Google
-- DOMAIN-KEYWORD,google,Proxy
-- DOMAIN-SUFFIX,abc.xyz,Proxy
-- DOMAIN-SUFFIX,android.com,Proxy
-- DOMAIN-SUFFIX,androidify.com,Proxy
-- DOMAIN-SUFFIX,dialogflow.com,Proxy
-- DOMAIN-SUFFIX,autodraw.com,Proxy
-- DOMAIN-SUFFIX,capitalg.com,Proxy
-- DOMAIN-SUFFIX,certificate-transparency.org,Proxy
-- DOMAIN-SUFFIX,chrome.com,Proxy
-- DOMAIN-SUFFIX,chromeexperiments.com,Proxy
-- DOMAIN-SUFFIX,chromestatus.com,Proxy
-- DOMAIN-SUFFIX,chromium.org,Proxy
-- DOMAIN-SUFFIX,creativelab5.com,Proxy
-- DOMAIN-SUFFIX,debug.com,Proxy
-- DOMAIN-SUFFIX,deepmind.com,Proxy
-- DOMAIN-SUFFIX,firebaseio.com,Proxy
-- DOMAIN-SUFFIX,getmdl.io,Proxy
-- DOMAIN-SUFFIX,ggpht.com,Proxy
-- DOMAIN-SUFFIX,gmail.com,Proxy
-- DOMAIN-SUFFIX,gmodules.com,Proxy
-- DOMAIN-SUFFIX,godoc.org,Proxy
-- DOMAIN-SUFFIX,golang.org,Proxy
-- DOMAIN-SUFFIX,gv.com,Proxy
-- DOMAIN-SUFFIX,gwtproject.org,Proxy
-- DOMAIN-SUFFIX,itasoftware.com,Proxy
-- DOMAIN-SUFFIX,madewithcode.com,Proxy
-- DOMAIN-SUFFIX,material.io,Proxy
-- DOMAIN-SUFFIX,polymer-project.org,Proxy
-- DOMAIN-SUFFIX,admin.recaptcha.net,Proxy
-- DOMAIN-SUFFIX,recaptcha.net,Proxy
-- DOMAIN-SUFFIX,shattered.io,Proxy
-- DOMAIN-SUFFIX,synergyse.com,Proxy
-- DOMAIN-SUFFIX,tensorflow.org,Proxy
-- DOMAIN-SUFFIX,tiltbrush.com,Proxy
-- DOMAIN-SUFFIX,waveprotocol.org,Proxy
-- DOMAIN-SUFFIX,waymo.com,Proxy
-- DOMAIN-SUFFIX,webmproject.org,Proxy
-- DOMAIN-SUFFIX,webrtc.org,Proxy
-- DOMAIN-SUFFIX,whatbrowser.org,Proxy
-- DOMAIN-SUFFIX,widevine.com,Proxy
-- DOMAIN-SUFFIX,x.company,Proxy
-- DOMAIN-SUFFIX,contest.com,Proxy
-- DOMAIN-SUFFIX,graph.org,Proxy
-- DOMAIN-SUFFIX,quiz.directory,Proxy
-- DOMAIN-SUFFIX,t.me,Proxy
-- DOMAIN-SUFFIX,tdesktop.com,Proxy
-- DOMAIN-SUFFIX,telega.one,Proxy
-- DOMAIN-SUFFIX,telegra.ph,Proxy
-- DOMAIN-SUFFIX,telegram.dog,Proxy
-- DOMAIN-SUFFIX,telegram.me,Proxy
-- DOMAIN-SUFFIX,telegram.org,Proxy
-- DOMAIN-SUFFIX,telegram.space,Proxy
-- DOMAIN-SUFFIX,telesco.pe,Proxy
-- DOMAIN-SUFFIX,tg.dev,Proxy
-- DOMAIN-SUFFIX,tx.me,Proxy
-- DOMAIN-SUFFIX,usercontent.dev,Proxy
-
-# apple
-- DOMAIN,hls.itunes.apple.com,DIRECT
-- DOMAIN,itunes.apple.com,DIRECT
-- DOMAIN,www.apple.com,DIRECT
-- DOMAIN-SUFFIX,apple.com,DIRECT
-- DOMAIN-SUFFIX,icloud.com,DIRECT
-- DOMAIN-SUFFIX,icloud-content.com,DIRECT
-- DOMAIN-SUFFIX,mzstatic.com,DIRECT
-- DOMAIN-SUFFIX,aaplimg.com,DIRECT
-- DOMAIN-SUFFIX,cdn-apple.com,DIRECT
-
-# microsoft
-- DOMAIN-SUFFIX,live.com,DIRECT
-- DOMAIN-SUFFIX,live.net,DIRECT
-- DOMAIN-SUFFIX,office.com,DIRECT
-- DOMAIN-SUFFIX,office.net,DIRECT
-- DOMAIN-SUFFIX,sharepoint.com,DIRECT
-- DOMAIN-SUFFIX,office365.com,DIRECT
-- DOMAIN-SUFFIX,officeppe.net,DIRECT
-- DOMAIN-SUFFIX,skype.com,DIRECT
-- DOMAIN-SUFFIX,onedrive.com,DIRECT
-- DOMAIN-SUFFIX,msocsp.com,DIRECT
-- DOMAIN-SUFFIX,msauthimages.net,DIRECT
-- DOMAIN-SUFFIX,msauth.net,DIRECT
-- DOMAIN-SUFFIX,msn.com,DIRECT
-- DOMAIN-SUFFIX,onenote.com,DIRECT
-- DOMAIN-SUFFIX,onenote.net,DIRECT
-- DOMAIN-SUFFIX,1drv.com,DIRECT
-- DOMAIN-SUFFIX,microsoft.com,DIRECT
-- DOMAIN-SUFFIX,microsoftonline.com,DIRECT
-
-- DOMAIN-SUFFIX,miui.com,DIRECT
-- DOMAIN-SUFFIX,miwifi.com,DIRECT
-- DOMAIN-SUFFIX,mob.com,DIRECT
-- DOMAIN-SUFFIX,netease.com,DIRECT
-- DOMAIN-SUFFIX,office.com,DIRECT
-- DOMAIN-SUFFIX,office365.com,DIRECT
-- DOMAIN-KEYWORD,officecdn,DIRECT
-- DOMAIN-SUFFIX,oschina.net,DIRECT
-- DOMAIN-SUFFIX,ppsimg.com,DIRECT
-- DOMAIN-SUFFIX,pstatp.com,DIRECT
-- DOMAIN-SUFFIX,qcloud.com,DIRECT
-- DOMAIN-SUFFIX,qdaily.com,DIRECT
-- DOMAIN-SUFFIX,qdmm.com,DIRECT
-- DOMAIN-SUFFIX,qhimg.com,DIRECT
-- DOMAIN-SUFFIX,qhres.com,DIRECT
-- DOMAIN-SUFFIX,qidian.com,DIRECT
-- DOMAIN-SUFFIX,qihucdn.com,DIRECT
-- DOMAIN-SUFFIX,qiniu.com,DIRECT
-- DOMAIN-SUFFIX,qiniucdn.com,DIRECT
-- DOMAIN-SUFFIX,qiyipic.com,DIRECT
-- DOMAIN-SUFFIX,qq.com,DIRECT
-- DOMAIN-SUFFIX,qqurl.com,DIRECT
-- DOMAIN-SUFFIX,rarbg.to,DIRECT
-- DOMAIN-SUFFIX,ruguoapp.com,DIRECT
-- DOMAIN-SUFFIX,segmentfault.com,DIRECT
-- DOMAIN-SUFFIX,sinaapp.com,DIRECT
-- DOMAIN-SUFFIX,smzdm.com,DIRECT
-- DOMAIN-SUFFIX,sogou.com,DIRECT
-- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
-- DOMAIN-SUFFIX,sohu.com,DIRECT
-- DOMAIN-SUFFIX,soku.com,DIRECT
-- DOMAIN-SUFFIX,speedtest.net,DIRECT
-- DOMAIN-SUFFIX,sspai.com,DIRECT
-- DOMAIN-SUFFIX,suning.com,DIRECT
-- DOMAIN-SUFFIX,taobao.com,DIRECT
-- DOMAIN-SUFFIX,tenpay.com,DIRECT
-- DOMAIN-SUFFIX,tmall.com,DIRECT
-- DOMAIN-SUFFIX,tudou.com,DIRECT
-- DOMAIN-SUFFIX,umetrip.com,DIRECT
-- DOMAIN-SUFFIX,upaiyun.com,DIRECT
-- DOMAIN-SUFFIX,upyun.com,DIRECT
-- DOMAIN-SUFFIX,veryzhun.com,DIRECT
-- DOMAIN-SUFFIX,weather.com,DIRECT
-- DOMAIN-SUFFIX,weibo.com,DIRECT
-- DOMAIN-SUFFIX,xiami.com,DIRECT
-- DOMAIN-SUFFIX,xiami.net,DIRECT
-- DOMAIN-SUFFIX,xiaomicp.com,DIRECT
-- DOMAIN-SUFFIX,ximalaya.com,DIRECT
-- DOMAIN-SUFFIX,xmcdn.com,DIRECT
-- DOMAIN-SUFFIX,xunlei.com,DIRECT
-- DOMAIN-SUFFIX,xycdn.com,DIRECT
-- DOMAIN-SUFFIX,yhd.com,DIRECT
-- DOMAIN-SUFFIX,yihaodianimg.com,DIRECT
-- DOMAIN-SUFFIX,yinxiang.com,DIRECT
-- DOMAIN-SUFFIX,ykimg.com,DIRECT
-- DOMAIN-SUFFIX,youdao.com,DIRECT
-- DOMAIN-SUFFIX,youku.com,DIRECT
-- DOMAIN-SUFFIX,zealer.com,DIRECT
-- DOMAIN-SUFFIX,zhihu.com,DIRECT
-- DOMAIN-SUFFIX,zhimg.com,DIRECT
-- DOMAIN-SUFFIX,zimuzu.tv,DIRECT
-
-# China
-- DOMAIN-SUFFIX,apcdns.net,DIRECT
-- DOMAIN-SUFFIX,cdntip.com,DIRECT
-- DOMAIN-SUFFIX,cdntips.com,DIRECT
-- DOMAIN-SUFFIX,foxmail.com,DIRECT
-- DOMAIN-SUFFIX,gtimg.com,DIRECT
-- DOMAIN-SUFFIX,idqqimg.com,DIRECT
-- DOMAIN-SUFFIX,imqq.com,DIRECT
-- DOMAIN-SUFFIX,myapp.com,DIRECT
-- DOMAIN-SUFFIX,myqcloud.com,DIRECT
-- DOMAIN-SUFFIX,qcloud.com,DIRECT
-- DOMAIN-SUFFIX,qcloudimg.com,DIRECT
-- DOMAIN-SUFFIX,qq.com,DIRECT
-- DOMAIN-SUFFIX,qqmail.com,DIRECT
-- DOMAIN-SUFFIX,qzone.com,DIRECT
-- DOMAIN-SUFFIX,servicewechat.com,DIRECT
-- DOMAIN-SUFFIX,smtcdns.com,DIRECT
-- DOMAIN-SUFFIX,smtcdns.net,DIRECT
-- DOMAIN-SUFFIX,tencent.com,DIRECT
-- DOMAIN-SUFFIX,tencent.com.hk,DIRECT
-- DOMAIN-SUFFIX,tencent-cloud.com,DIRECT
-- DOMAIN-SUFFIX,tencent-cloud.net,DIRECT
-- DOMAIN-SUFFIX,tencentcs.com,DIRECT
-- DOMAIN-SUFFIX,tencentmusic.com,DIRECT
-- DOMAIN-SUFFIX,tencentyun.com,DIRECT
-- DOMAIN-SUFFIX,tenpay.com,DIRECT
-- DOMAIN-SUFFIX,wechat.com,DIRECT
-- DOMAIN-SUFFIX,wegame.com,DIRECT
-- DOMAIN-SUFFIX,weiyun.com,DIRECT
-- DOMAIN-SUFFIX,25pp.com,DIRECT
-- DOMAIN-SUFFIX,56che.com,DIRECT
-- DOMAIN-SUFFIX,95095.com,DIRECT
-- DOMAIN-SUFFIX,aliapp.org,DIRECT
-- DOMAIN-SUFFIX,alibaba-inc.com,DIRECT
-- DOMAIN-SUFFIX,alibaba.com,DIRECT
-- DOMAIN-SUFFIX,alibabacapital.com,DIRECT
-- DOMAIN-SUFFIX,alibabacorp.com,DIRECT
-- DOMAIN-SUFFIX,alibabadoctor.com,DIRECT
-- DOMAIN-SUFFIX,alibabafuturehotel.com,DIRECT
-- DOMAIN-SUFFIX,alibabagroup.com,DIRECT
-- DOMAIN-SUFFIX,alibabaplanet.com,DIRECT
-- DOMAIN-SUFFIX,alibabaued.com,DIRECT
-- DOMAIN-SUFFIX,alibabausercontent.com,DIRECT
-- DOMAIN-SUFFIX,alifanyi.com,DIRECT
-- DOMAIN-SUFFIX,alihealth.hk,DIRECT
-- DOMAIN-SUFFIX,aliimg.com,DIRECT
-- DOMAIN-SUFFIX,alikmd.com,DIRECT
-- DOMAIN-SUFFIX,alimama.com,DIRECT
-- DOMAIN-SUFFIX,alimebot.com,DIRECT
-- DOMAIN-SUFFIX,alimei.com,DIRECT
-- DOMAIN-SUFFIX,alipay.com,DIRECT
-- DOMAIN-SUFFIX,alipaydns.com,DIRECT
-- DOMAIN-SUFFIX,alipayobjects.com,DIRECT
-- DOMAIN-SUFFIX,aliplus.com,DIRECT
-- DOMAIN-SUFFIX,aliresearch.com,DIRECT
-- DOMAIN-SUFFIX,alisoft.com,DIRECT
-- DOMAIN-SUFFIX,alisports.com,DIRECT
-- DOMAIN-SUFFIX,alitianji.com,DIRECT
-- DOMAIN-SUFFIX,aliunicorn.com,DIRECT
-- DOMAIN-SUFFIX,aliway.com,DIRECT
-- DOMAIN-SUFFIX,aliwork.com,DIRECT
-- DOMAIN-SUFFIX,alixiaomi.com,DIRECT
-- DOMAIN-SUFFIX,alizhaopin.com,DIRECT
-- DOMAIN-SUFFIX,asczwa.com,DIRECT
-- DOMAIN-SUFFIX,asczxcefsv.com,DIRECT
-- DOMAIN-SUFFIX,atatech.org,DIRECT
-- DOMAIN-SUFFIX,b2byao.com,DIRECT
-- DOMAIN-SUFFIX,bazai.com,DIRECT
-- DOMAIN-SUFFIX,bcvbw.com,DIRECT
-- DOMAIN-SUFFIX,cheng.xin,DIRECT
-- DOMAIN-SUFFIX,dayu.com,DIRECT
-- DOMAIN-SUFFIX,dongting.com,DIRECT
-- DOMAIN-SUFFIX,dratio.com,DIRECT
-- DOMAIN-SUFFIX,emas-poc.com,DIRECT
-- DOMAIN-SUFFIX,ialicdn.com,DIRECT
-- DOMAIN-SUFFIX,kanbox.com,DIRECT
-- DOMAIN-SUFFIX,lazada.com,DIRECT
-- DOMAIN-SUFFIX,liangxinyao.com,DIRECT
-- DOMAIN-SUFFIX,maitix.com,DIRECT
-- DOMAIN-SUFFIX,1688.com,DIRECT
-- DOMAIN-SUFFIX,etao.com,DIRECT
-- DOMAIN-SUFFIX,juhuasuan.com,DIRECT
-- DOMAIN-SUFFIX,lingshoujia.com,DIRECT
-- DOMAIN-SUFFIX,pailitao.com,DIRECT
-- DOMAIN-SUFFIX,taobao.com,DIRECT
-- DOMAIN-SUFFIX,taobao.org,DIRECT
-- DOMAIN-SUFFIX,taobaocdn.com,DIRECT
-- DOMAIN-SUFFIX,taobizhong.com,DIRECT
-- DOMAIN-SUFFIX,taopiaopiao.com,DIRECT
-- DOMAIN-SUFFIX,tbcache.com,DIRECT
-- DOMAIN-SUFFIX,tburl.in,DIRECT
-- DOMAIN-SUFFIX,tmall.com,DIRECT
-- DOMAIN-SUFFIX,tmall.ru,DIRECT
-- DOMAIN-SUFFIX,tmalltv.com,DIRECT
-- DOMAIN-SUFFIX,tmjl.ai,DIRECT
-- DOMAIN-SUFFIX,alitrip.com,DIRECT
-- DOMAIN-SUFFIX,feizhu.com,DIRECT
-- DOMAIN-SUFFIX,fliggy.com,DIRECT
-
-
-# DNS
-- DOMAIN,dns.google,Proxy
-- IP-CIDR,1.1.1.1/32,Proxy,no-resolve
-- IP-CIDR,1.0.0.1/32,Proxy,no-resolve
-- IP-CIDR,8.8.8.8/32,Proxy,no-resolve
-- IP-CIDR,119.29.29.29/32,DIRECT,no-resolve
-- IP-CIDR,114.114.114.114/32,DIRECT,no-resolve
-
-# LAN
-- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
-- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
-- IP-CIDR,17.0.0.0/8,DIRECT,no-resolve
-- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
-- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
-- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
-
-# RULE VERSION
-- DOMAIN,2020020202.version.clash.im,REJECT
-
-- DOMAIN-SUFFIX,cn,DIRECT
-- GEOIP,CN,DIRECT
-
-# Final
-- MATCH,Proxy
+- {name: 🏁RELAY-162.159.1.33-000, server: 162.159.1.33, port: 8080, type: vmess, uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm, tls: false, ws-headers: {Host: pcs-referenced-camera-concerns.trycloudflare.com}}
+- {name: 🇧🇷BR-78.111.102.232-001, server: 78.111.102.232, port: 3389, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, skip-cert-verify: true, network: http, ws-path: /, tls: false, ws-headers: {Host: 78.111.102.232}}
+- {name: 🏁RELAY-172.67.132.6-002, server: 172.67.132.6, port: 2096, type: trojan, password: 4db45bb4-dcca-4d37-a639-cb55213ee406, sni: channel.v2bamdad.tech, skip-cert-verify: true}
+- {name: 🏁RELAY-172.67.152.170-003, server: 172.67.152.170, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: mahilu.site}}
+- {name: 🏁RELAY-104.26.4.57-004, server: russia.com, port: 2095, type: vmess, uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, tls: false, ws-headers: {Host: ssrsub.v03.ssrsub.com}}
+- {name: 🇺🇸US-66.241.124.229-005, server: cold-dawn-9246.fly.dev, port: 443, type: vmess, uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm, tls: true, ws-headers: {Host: cold-dawn-9246.fly.dev}}
+- {name: 🏁RELAY-162.159.137.249-006, server: 162.159.137.249, port: 8080, type: vmess, uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm, tls: false, ws-headers: {Host: nest-emily-healing-h.trycloudflare.com}}
+- {name: 🏁RELAY-104.21.82.39-007, server: 104.21.82.39, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: mahilu.site}}
+- {name: 🏁RELAY-104.21.82.39-008, server: mahilu.site, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: mahilu.site}}
+- {name: 🏁RELAY-23.227.39.24-009, server: 23.227.39.24, port: 8080, type: vmess, uuid: 9258153a-dc97-4e39-9037-009abfc4fed0, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm, tls: false, ws-headers: {Host: per-essex-patterns-bowling.trycloudflare.com}}
+- {name: 🏁RELAY-94.140.0.110-010, server: 94.140.0.110, port: 8880, type: vmess, uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: food.zhaal.ir}}
+- {name: 🏁RELAY-23.227.38.22-011, server: 23.227.38.22, port: 8080, type: vmess, uuid: 9258153a-dc97-4e39-9037-009abfc4fed0, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm, tls: false, ws-headers: {Host: per-essex-patterns-bowling.trycloudflare.com}}
+- {name: 🏁RELAY-23.227.38.11-012, server: 23.227.38.11, port: 443, type: trojan, password: b17fa17d-13a0-4e8a-a398-8e549ea8b208, sni: syndication-statutes-wanted-logo.trycloudflare.com, ws-path: "h=%2Fargox-tr", skip-cert-verify: true}
+- {name: 🇩🇪DE-18.196.39.57-013, server: 18.196.39.57, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true}
+- {name: 🇮🇪IE-34.252.21.244-014, server: 34.252.21.244, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true}
+- {name: 🏁RELAY-104.16.149.244-015, server: fbi.gov, port: 8080, type: vmess, uuid: ef8c954e-014f-4b36-8273-9b5086afab34, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: ef8c954e-014f-4b36-8273-9b5086afab34-vm, tls: false, ws-headers: {Host: bibliographic-sword-sequence-advertisers.trycloudflare.com}}
+- {name: 🏁RELAY-172.67.169.3-016, server: yh3.freeh1.xyz, port: 8080, type: vmess, uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm, tls: false, ws-headers: {Host: larger-marketing-amounts-skin.trycloudflare.com}}
+- {name: 🏁RELAY-104.19.136.181-017, server: cfcdn1.sanfencdn9.com, port: 2086, type: vmess, uuid: 3f09c198-da80-44ce-a72b-40bc600b2321, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /video/Z7qdcrAGRw, tls: false, ws-headers: {Host: us77SmSk86j.fzbqfrse.xyz}}
+- {name: 🇺🇸US-108.181.23.161-018, server: 108.181.23.161, port: 8080, type: vmess, uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /1IKYjV0r/, tls: false, ws-headers: {Host: internet.life.com.by}}
+- {name: 🏁RELAY-162.159.134.23-019, server: 162.159.134.23, port: 8080, type: vmess, uuid: 9b196b50-37f2-4f4b-b175-06273adc6207, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm, tls: false, ws-headers: {Host: championship-bidding-oxygen-brochure.trycloudflare.com}}
+- {name: 🇨🇦CA-134.122.41.160-020, server: 134.122.41.160, port: 3389, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, skip-cert-verify: true, network: http, ws-path: /, tls: false, ws-headers: {Host: 134.122.41.160}}
+- {name: 🏁RELAY-23.227.38.23-021, server: 23.227.38.23, port: 8080, type: vmess, uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm, tls: false, ws-headers: {Host: uh-lawyers-instruments-kernel.trycloudflare.com}}
+- {name: 🏁RELAY-162.159.130.208-022, server: 162.159.130.208, port: 8080, type: vmess, uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm, tls: false, ws-headers: {Host: widescreen-instruction-breakdown-postage.trycloudflare.com}}
+- {name: 🇫🇷FR-51.159.155.52-023, server: 51.159.155.52, port: 3389, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, skip-cert-verify: true, network: http, ws-path: /, tls: false, ws-headers: {Host: 51.159.155.52}}
+- {name: 🇰🇿KZ-45.82.31.164-024, server: 45.82.31.164, port: 3389, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, skip-cert-verify: true, network: http, ws-path: /, tls: false, ws-headers: {Host: 45.82.31.164}}
+- {name: 🏁RELAY-162.159.5.6-025, server: 162.159.5.6, port: 8080, type: vmess, uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm, tls: false, ws-headers: {Host: pcs-referenced-camera-concerns.trycloudflare.com}}
+- {name: 🇯🇵JP-172.207.241.83-026, server: kz.mjt000.com, port: 443, type: trojan, password: c2c76420-257f-492a-b20f-6560f3bfa78d, skip-cert-verify: true}
+- {name: 🏁RELAY-104.26.5.57-027, server: russia.com, port: 8880, type: vmess, uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, tls: false, ws-headers: {Host: ssrsub.v03.ssrsub.com}}
+- {name: 🏁RELAY-162.159.8.55-028, server: yh2.freeh1.xyz, port: 8080, type: vmess, uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm, tls: false, ws-headers: {Host: pcs-referenced-camera-concerns.trycloudflare.com}}
+- {name: 🇺🇸US-128.1.38.37-029, server: 128.1.38.37, port: 46033, type: vmess, uuid: fa6a9730-78e9-4416-9830-d3b935acbde1, alterId: 0, cipher: auto, skip-cert-verify: true, network: tcp, ws-path: /, tls: false, ws-headers: {Host: 128.1.38.37}}
+- {name: 🇸🇬SG-167.71.197.50-030, server: 167.71.197.50, port: 44194, type: vmess, uuid: 5cc6c2cf-af81-4341-f8f7-af8a83804d46, alterId: 0, cipher: auto, skip-cert-verify: true, network: tcp, ws-path: /, tls: false, ws-headers: {Host: 167.71.197.50}}
+- {name: 🇭🇰HK-65.52.171.156-031, server: 65.52.171.156, port: 15031, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 65.52.171.156}}
+- {name: 🇭🇰HK-13.72.192.219-032, server: 13.72.192.219, port: 15018, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 13.72.192.219}}
+- {name: 🇭🇰HK-13.72.192.219-033, server: 13.72.192.219, port: 36104, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 13.72.192.219}}
+- {name: 🇨🇳CN-183.232.113.49-034, server: 12.v2-ray.cyou, port: 15012, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 12.v2-ray.cyou}}
+- {name: 🇭🇰HK-13.72.192.219-035, server: 13.72.192.219, port: 15015, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 13.72.192.219}}
+- {name: 🇭🇰HK-65.52.171.156-036, server: 65.52.171.156, port: 36174, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 65.52.171.156}}
+- {name: 🇸🇬SG-52.221.200.197-037, server: colagzcm.jumpwallsocks.online, port: 38002, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, skip-cert-verify: true}
+- {name: 🇸🇬SG-52.221.200.197-038, server: colagzcm.jumpwallsocks.online, port: 31006, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, skip-cert-verify: true}
+- {name: 🇸🇬SG-52.221.200.197-039, server: colagzcm.jumpwallsocks.online, port: 34001, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, skip-cert-verify: true}
+- {name: 🇦🇶NOWHERE-0.0.0.0-040, server: 4.v2-ray.cyou, port: 36104, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 4.v2-ray.cyou}}
+- {name: 🇦🇶NOWHERE-0.0.0.0-041, server: 71.v2-ray.cyou, port: 15071, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 71.v2-ray.cyou}}
+- {name: 🇦🇶NOWHERE-0.0.0.0-042, server: 85.v2-ray.cyou, port: 15085, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 85.v2-ray.cyou}}
+- {name: 🇦🇶NOWHERE-0.0.0.0-043, server: 72.v2-ray.cyou, port: 15072, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 72.v2-ray.cyou}}
+- {name: 🇨🇳CN-183.232.113.49-044, server: 31.v2-ray.cyou, port: 15031, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 31.v2-ray.cyou}}
+- {name: 🇨🇳CN-183.232.113.49-045, server: 18.v2-ray.cyou, port: 15018, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 18.v2-ray.cyou}}
+- {name: 🇨🇳CN-183.232.113.49-046, server: 15.v2-ray.cyou, port: 15015, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 15.v2-ray.cyou}}
+- {name: 🇦🇶NOWHERE-0.0.0.0-047, server: 84.v2-ray.cyou, port: 15084, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 84.v2-ray.cyou}}
+- {name: 🇦🇶NOWHERE-0.0.0.0-048, server: 74.v2-ray.cyou, port: 36174, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 74.v2-ray.cyou}}
+- {name: 🇨🇳CN-183.232.113.49-049, server: 38.v2-ray.cyou, port: 15038, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 38.v2-ray.cyou}}
+- {name: 🇭🇰HK-65.52.171.156-050, server: 65.52.171.156, port: 15071, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 65.52.171.156}}
+- {name: 🇸🇬SG-52.221.200.197-051, server: colagzcm.jumpwallsocks.online, port: 41002, type: ss, cipher: chacha20-ietf-poly1305, password: f238b431-ba39-427d-9bbd-2440c30ef211}
+- {name: 🇺🇸US-169.197.142.4-052, server: 169.197.142.4, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+- {name: 🇦🇶NOWHERE-0.0.0.0-053, server: jp-group-a-direct.node001.xyz, port: 8880, type: vmess, uuid: a34d6fe7-7ab0-3071-81f7-e24c8edd2acb, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: jp-group-a-direct.node001.xyz}}
+- {name: 🇰🇷KR-146.56.99.245-054, server: 146.56.99.245, port: 25135, type: vmess, uuid: 5893f7e5-9695-45af-f65e-bd2958ba93fa, alterId: 0, cipher: auto, skip-cert-verify: true, network: tcp, ws-path: /, tls: false, ws-headers: {Host: 146.56.99.245}}
+- {name: 🇦🇶NOWHERE-0.0.0.0-055, server: jp-group-a-direct.node001.xyz, port: 80, type: vmess, uuid: 1f32c777-6891-30c4-92c0-388a75cd9793, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: jp-group-a-direct.node001.xyz}}
+- {name: 🇯🇵JP-168.138.36.193-056, server: 168.138.36.193, port: 32329, type: vmess, uuid: ddf03d93-d6e5-46f8-8176-80536e52e50e, alterId: 0, cipher: auto, skip-cert-verify: true, network: tcp, ws-path: /, tls: false, ws-headers: {Host: 168.138.36.193}}
+- {name: 🇯🇵JP-40.74.119.112-057, server: 40.74.119.112, port: 4256, type: vmess, uuid: 89c4c365-f144-4d8a-a68c-beccc4bcb1df, alterId: 0, cipher: auto, skip-cert-verify: true, network: tcp, ws-path: /, tls: false, ws-headers: {Host: 40.74.119.112}}
+- {name: 🇨🇦CA-134.195.196.3-058, server: 134.195.196.3, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+- {name: 🇨🇦CA-134.195.196.187-059, server: 134.195.196.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+- {name: 🇰🇷KR-146.56.99.245-060, server: 146.56.99.245, port: 25135, type: vmess, uuid: 5893f7e5-9695-45af-f65e-bd2958ba93fa, alterId: 0, cipher: auto, skip-cert-verify: true, network: tcp, ws-path: /, tls: false, ws-headers: {Host: 146.56.99.245}}
+- {name: 🇩🇪DE-142.93.168.188-061, server: 142.93.168.188, port: 21612, type: ss, cipher: chacha20-ietf-poly1305, password: zUOC2CcSPiEX}
+- {name: 🇫🇷FR-51.255.66.185-062, server: 51.255.66.185, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+- {name: 🇲🇴MO-122.100.177.47-063, server: 122.100.177.47, port: 30303, type: vmess, uuid: 0dbb0d98-32ca-3004-b282-9951fe88dc57, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, tls: false, ws-headers: {Host: 122.100.177.47}}
+- {name: 🇯🇵JP-85.208.108.234-064, server: 85.208.108.234, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+- {name: 🇯🇵JP-85.208.108.234-065, server: 85.208.108.234, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+- {name: 🇦🇶NOWHERE-0.0.0.0-066, server: www.sanjose2021.ga, port: 443, type: trojan, password: 6cfa5ab4-c2a5-4ad1-8b75-ff12bc59b770, skip-cert-verify: true}
+- {name: 🇮🇳IN-129.227.201.234-067, server: 129.227.201.234, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /ws, tls: true, ws-headers: {Host: aicoo6du.com}}
+- {name: 🇦🇶NOWHERE-0.0.0.0-068, server: jp-group-a-direct.node001.xyz, port: 8880, type: vmess, uuid: a34d6fe7-7ab0-3071-81f7-e24c8edd2acb, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: jp-group-a-direct.node001.xyz}}
+- {name: 🇦🇶NOWHERE-0.0.0.0-069, server: kr.rnmtq.gq, port: 63470, type: vmess, uuid: cb8ab285-fafc-45f6-87bc-97a7a2f27f9f, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: vod3.nty.tv189.cn}}
+- {name: 🇭🇰HK-13.72.192.219-070, server: 13.72.192.219, port: 15012, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 13.72.192.219}}
+- {name: 🇬🇧GB-172.99.190.92-071, server: 172.99.190.92, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+- {name: 🇦🇶NOWHERE-0.0.0.0-072, server: www.gomacau.gq, port: 443, type: trojan, password: b5fc9fa9-796d-4185-a316-395ecac04a85, skip-cert-verify: true}
+- {name: 🇦🇶NOWHERE-0.0.0.0-073, server: hk-az-4.licom.ga, port: 44332, type: trojan, password: f81e990e-1283-48f9-9eff-acacad6fb661, skip-cert-verify: true}
+- {name: 🇭🇰HK-20.205.47.95-074, server: 20.205.47.95, port: 15021, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 20.205.47.95}}
+- {name: 🇭🇰HK-20.239.51.22-075, server: 20.239.51.22, port: 15006, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 20.239.51.22}}
+- {name: 🇭🇰HK-20.205.47.95-076, server: 20.205.47.95, port: 15023, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 20.205.47.95}}
+- {name: 🇺🇸US-104.166.135.10-077, server: 104.166.135.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /ws, tls: true, ws-headers: {Host: ahdaeph8.com}}
+- {name: 🇬🇧GB-172.99.190.92-078, server: 172.99.190.92, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+- {name: 🇬🇧GB-172.99.190.92-079, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+- {name: 🇬🇧GB-172.99.190.92-080, server: 172.99.190.92, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+- {name: 🇸🇬SG-52.221.200.197-081, server: colagzcm.jumpwallsocks.online, port: 35002, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, skip-cert-verify: true}
+- {name: 🇸🇬SG-52.221.200.197-082, server: colagzcm.jumpwallsocks.online, port: 35003, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, skip-cert-verify: true}
+- {name: 🇸🇬SG-52.221.200.197-083, server: colagzcm.jumpwallsocks.online, port: 31004, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, skip-cert-verify: true}
+- {name: 🇸🇬SG-52.221.200.197-084, server: colagzcm.jumpwallsocks.online, port: 31008, type: trojan, password: f238b431-ba39-427d-9bbd-2440c30ef211, skip-cert-verify: true}
+- {name: 🇦🇶NOWHERE-0.0.0.0-085, server: kr2.qingyun123.xyz, port: 10050, type: trojan, password: 2bbee0bf-d920-4572-b87b-eac67ba69736, skip-cert-verify: true}
+- {name: 🇨🇳CN-183.232.113.49-086, server: 21.v2-ray.cyou, port: 15021, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 21.v2-ray.cyou}}
+- {name: 🇨🇳CN-183.232.113.49-087, server: 14.v2-ray.cyou, port: 15014, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 14.v2-ray.cyou}}
+- {name: 🇨🇳CN-183.232.113.49-088, server: 6.v2-ray.cyou, port: 15006, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 6.v2-ray.cyou}}
+- {name: 🇨🇳CN-183.232.113.49-089, server: 23.v2-ray.cyou, port: 15023, type: vmess, uuid: 047184b7-6da2-3d3f-ac27-6a1a8701daf8, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: 23.v2-ray.cyou}}
+- {name: 🇺🇸US-167.88.61.175-090, server: 167.88.61.175, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+- {name: 🇬🇧GB-172.99.190.92-091, server: 172.99.190.92, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+- {name: 🇺🇸US-155.248.202.203-092, server: 155.248.202.203, port: 14564, type: vmess, uuid: 4a0da379-a7cc-4389-88d7-45514b896883, alterId: 0, cipher: auto, skip-cert-verify: true, network: tcp, ws-path: /, tls: false, ws-headers: {Host: 155.248.202.203}}
+- {name: 🇦🇶NOWHERE-0.0.0.0-093, server: jp-group-a-direct.node001.xyz, port: 80, type: vmess, uuid: 1f32c777-6891-30c4-92c0-388a75cd9793, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: jp-group-a-direct.node001.xyz}}
+- {name: 🇫🇷FR-51.255.66.185-094, server: 51.255.66.185, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+- {name: 🇫🇷FR-51.255.66.185-095, server: 51.255.66.185, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+- {name: 🇫🇷FR-51.255.66.185-096, server: 51.255.66.185, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+- {name: 🇨🇦CA-134.195.196.81-097, server: 134.195.196.81, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+- {name: 🇺🇸US-169.197.142.99-098, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+- {name: 🇺🇸US-169.197.142.99-099, server: 169.197.142.99, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+- {name: 🇨🇦CA-134.195.196.3-100, server: 134.195.196.3, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+- {name: 🇨🇦CA-134.195.196.187-101, server: 134.195.196.187, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+- {name: 🇨🇦CA-134.195.196.81-102, server: 134.195.196.81, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+- {name: 🇨🇦CA-134.195.196.81-103, server: 134.195.196.81, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+- {name: 🇨🇦CA-134.195.196.81-104, server: 134.195.196.81, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+- {name: 🇦🇶NOWHERE-0.0.0.0-105, server: 0319ru99.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /nmsl, tls: true, ws-headers: {Host: 0319ru99.fans8.xyz}}
+- {name: 🇦🇶NOWHERE-0.0.0.0-106, server: 0320ru1702.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /v2ray, tls: false, ws-headers: {Host: 0320ru1702.fans8.xyz}}
+- {name: 🇲🇴MO-122.100.177.47-107, server: 122.100.177.47, port: 30303, type: vmess, uuid: 0dbb0d98-32ca-3004-b282-9951fe88dc57, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, tls: false, ws-headers: {Host: 122.100.177.47}}
+- {name: 🇦🇶NOWHERE-0.0.0.0-108, server: aicoo6du.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /ws, tls: true, ws-headers: {Host: aicoo6du.com}}
+- {name: 🇦🇶NOWHERE-0.0.0.0-109, server: 0320tw1731.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /nl, tls: true, ws-headers: {Host: 0320tw1731.fans8.xyz}}
+- {name: 🇺🇸US-169.197.142.4-110, server: 169.197.142.4, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+- {name: 🇺🇸US-169.197.142.99-111, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+- {name: 🇨🇦CA-134.195.196.68-112, server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+- {name: 🇨🇦CA-134.195.196.68-113, server: 134.195.196.68, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+- {name: 🇨🇦CA-134.195.196.3-114, server: 134.195.196.3, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+- {name: 🇳🇱NL-185.242.86.156-115, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV}
+- {name: 🇱🇺LU-202.78.162.5-116, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: true, ws-headers: {Host: irsoft.sytes.net}}
+- {name: 🇱🇺LU-202.78.162.5-117, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: true, ws-headers: {Host: sahand.serveminecraft.net}}
+- {name: 🏁RELAY-172.67.215.103-118, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: www.darkroom.lol}}
+- {name: 🇫🇷FR-193.243.147.128-119, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X}
+- {name: 🏁RELAY-172.67.161.114-120, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: server31.beheshtbaneh.com}}
+- {name: 🇨🇳CN-183.232.170.157-121, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /debian, tls: false, ws-headers: {Host: data-us-v1.shwjfkw.cn}}
+- {name: 🇨🇳CN-120.238.122.159-122, server: service.ouluyun9803.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2}
+- {name: 🏁RELAY-104.21.82.183-123, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: server26.beheshtbaneh.com}}
+- {name: 🇱🇺LU-202.78.162.5-124, server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: true, ws-headers: {Host: pendar.onthewifi.com}}
+- {name: 🇨🇳CN-120.238.122.159-125, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2}
+- {name: 🇨🇳CN-120.238.122.159-126, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2}
+- {name: 🇦🇶FASTLY-151.101.0.144-127, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /77848824, tls: true, ws-headers: {Host: zheshiscp.com}}
+- {name: 🏁RELAY-172.67.161.114-128, server: server32.beheshtbaneh.com, port: 8880, type: vmess, uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: server32.beheshtbaneh.com}}
+- {name: 🇸🇬SG-13.213.46.196-129, server: 13.213.46.196, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+- {name: 🇯🇵JP-54.199.83.239-130, server: 54.199.83.239, port: 2333, type: ss, cipher: aes-256-cfb, password: doub.io}
+- {name: 🇸🇬SG-54.251.168.143-131, server: 54.251.168.143, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+- {name: 🇨🇳CN-117.149.247.11-132, server: wqfuinwqffq.dfcloud.xyz, port: 30818, type: ss, cipher: chacha20-ietf-poly1305, password: 8e949d75-3510-4678-8593-3c5032dd931a}
+- {name: 🇦🇶NOWHERE-0.0.0.0-133, server: xt.ylks01.eu.org, port: 2095, type: vmess, uuid: b710770a-fdaf-41fb-bbe4-68a6c41e2605, alterId: 64, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /blue, tls: false, ws-headers: {Host: xt.ylks01.eu.org}}
+- {name: 🇦🇶NOWHERE-0.0.0.0-134, server: aaaa.wxx.gay, port: 443, type: vmess, uuid: 8237ec34-143a-11ee-8019-000017022008, alterId: 64, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /look, tls: true, ws-headers: {Host: aaaa.wxx.gay}}
+- {name: 🇸🇬SG-159.223.94.156-135, server: 159.223.94.156, port: 80, type: vmess, uuid: 533724ad-58ef-4147-88dc-9da523c15fc4, alterId: 64, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /anti13.zingfast.vn, tls: false, ws-headers: {Host: 159.223.94.156}}
+- {name: 🏁RELAY-104.21.67.88-136, server: hkd1.quickerlink.xyz, port: 443, type: vmess, uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9, alterId: 64, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /h6jr23x9h3lqiitg, tls: true, ws-headers: {Host: hkd1.quickerlink.xyz}}
+- {name: 🏁RELAY-104.21.224.36-137, server: 104.21.224.36, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳@WangCai_8", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-172.67.215.103-138, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: www.darkroom.lol}}
+- {name: 🏁RELAY-104.21.233.46-139, server: 104.21.233.46, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🇺🇸US-78.111.104.138-140, server: 19238tj.matrixxx888.com, port: 19238, type: trojan, password: 7b0ed263-ed4d-375f-9002-a932b1da098a, sni: eplcgame.com, skip-cert-verify: true}
+- {name: 🏁RELAY-104.21.232.62-141, server: 104.21.232.62, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳 @WangCai08", tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🏁RELAY-104.21.236.61-142, server: 104.21.236.61, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳@WangCai_8", tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🇨🇳CN-183.232.170.157-143, server: 183.232.170.157, port: 20301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /debian, tls: false, ws-headers: {Host: data-jp-v1.usabooks.com.cn}}
+- {name: 🏁RELAY-104.21.239.99-144, server: 104.21.239.99, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳@WangCai_8", tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🇭🇰HK-91.149.237.179-145, server: 19201tj.matrixxx888.com, port: 19201, type: trojan, password: 7b0ed263-ed4d-375f-9002-a932b1da098a, sni: eplcgame.com, skip-cert-verify: true}
+- {name: 🏁RELAY-104.21.224.152-146, server: 104.21.224.152, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🇨🇳CN-120.232.159.91-147, server: gz.quanstring.top, port: 45131, type: ss, cipher: chacha20-ietf-poly1305, password: 1172b614-b9d0-447e-a8a9-5f1db0c5affc}
+- {name: 🏁RELAY-104.21.230.31-148, server: 104.21.230.31, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.231.35-149, server: 104.21.231.35, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🇦🇹AT-45.138.74.160-150, server: 45.138.74.160, port: 7261, type: ss, cipher: chacha20-ietf-poly1305, password: pZvwP17Nlz2z6jsYnVgZgf}
+- {name: 🏁RELAY-104.21.224.205-151, server: 104.21.224.205, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳 @WangCai_8", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.224.164-152, server: 104.21.224.164, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.227.36-153, server: 104.21.227.36, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-172.67.131.186-154, server: access.cdn-tgju.org, port: 2096, type: vmess, uuid: 0dd7dd81-5cd2-430e-86d3-bba4f0075cd1, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /thws, tls: true, ws-headers: {Host: access.cdn-tgju.org}}
+- {name: 🇨🇳CN-103.56.60.47-155, server: 103.56.60.47, port: 36802, type: vmess, uuid: c0ad0b4b-5372-3ab8-9d43-5f8022a0f1ec, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, tls: false, ws-headers: {Host: annie51.ceoiii.com}}
+- {name: 🏁RELAY-104.21.229.26-156, server: 104.21.229.26, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🏁RELAY-104.21.47.176-157, server: 104.21.47.176, port: 443, type: trojan, password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2, sni: hdfyc1.achaemenidempireofpersia.uk, skip-cert-verify: true}
+- {name: 🇫🇷FR-95.179.209.248-158, server: 95.179.209.248, port: 1080, type: ss, cipher: chacha20-ietf-poly1305, password: VS26JLbJV869EBN1lBn2LQ}
+- {name: 🏁RELAY-104.26.4.57-159, server: russia.com, port: 2095, type: vmess, uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, tls: false, ws-headers: {Host: ssrsub.v03.ssrsub.com}}
+- {name: 🏁RELAY-104.21.233.67-161, server: 104.21.233.67, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.238.72-162, server: 104.21.238.72, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🏁RELAY-104.16.192.146-163, server: 104.16.192.146, port: 443, type: trojan, password: 0ab6c98dae3b48e8b9c4a776b6c9c19a, sni: jobscareertoday.com, ws-path: h=6b777a91, skip-cert-verify: true}
+- {name: 🇫🇷FR-193.243.147.128-164, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X}
+- {name: 🏁RELAY-104.21.221.135-165, server: 104.21.221.135, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.232.41-166, server: 104.21.232.41, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳 @WangCai08", tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🏁RELAY-104.21.234.52-167, server: 104.21.234.52, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.225.28-168, server: 104.21.225.28, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳 @WangCai_8", tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🏁RELAY-104.21.219.130-169, server: 104.21.219.130, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.237.85-170, server: 104.21.237.85, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🏁RELAY-104.21.226.14-171, server: 104.21.226.14, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳 @WangCai08", tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🏁RELAY-172.67.130.140-172, server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: s1c.v2.v001sss.xyz}}
+- {name: 🏁RELAY-104.21.82.183-173, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: server26.beheshtbaneh.com}}
+- {name: 🏁RELAY-104.21.232.63-174, server: 104.21.232.63, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🏁RELAY-104.21.224.209-175, server: 104.21.224.209, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.239.98-176, server: 104.21.239.98, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🏁RELAY-104.21.220.82-177, server: 104.21.220.82, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-188.114.96.113-178, server: 188.114.96.113, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🏁RELAY-162.159.8.55-179, server: yh2.freeh1.xyz, port: 8080, type: vmess, uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm, tls: false, ws-headers: {Host: nest-emily-healing-h.trycloudflare.com}}
+- {name: 🏁RELAY-104.21.231.56-180, server: 104.21.231.56, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.224.136-181, server: 104.21.224.136, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.224.16-182, server: 104.21.224.16, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳@WangCai_8", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.237.87-183, server: 104.21.237.87, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.224.1-184, server: 104.21.224.1, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳 @WangCai_8", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.229.46-185, server: 104.21.229.46, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🇨🇳CN-183.232.170.157-186, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /debian, tls: false, ws-headers: {Host: data-us-v1.shwjfkw.cn}}
+- {name: 🏁RELAY-104.21.238.70-187, server: 104.21.238.70, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🇨🇳CN-120.238.122.208-188, server: ddns.olucloud.subapi.cc, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: 6f932057-ffd9-4426-8ca7-f0654babf84f}
+- {name: 🏁RELAY-104.21.224.117-189, server: 104.21.224.117, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳@WangCai_8", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.238.94-190, server: 104.21.238.94, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-172.67.107.131-191, server: 172.67.107.131, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", tls: false, ws-headers: {Host: eu2.openxai.link}}
+- {name: 🏁RELAY-104.21.224.216-192, server: 104.21.224.216, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&amp;Telegram🇨🇳 @WangCai_8", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🇦🇶FASTLY-151.101.1.57-193, server: fastly.com, port: 80, type: vmess, uuid: 66ccb11f-75a7-4282-8a60-31fed447401d, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", tls: false, ws-headers: {Host: nmsl.kp}}
+- {name: 🏁RELAY-104.21.237.66-194, server: 104.21.237.66, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🏁RELAY-23.227.39.24-195, server: 23.227.39.24, port: 8080, type: vmess, uuid: 9258153a-dc97-4e39-9037-009abfc4fed0, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm, tls: false, ws-headers: {Host: per-essex-patterns-bowling.trycloudflare.com}}
+- {name: 🏁RELAY-104.21.82.39-196, server: mahilu.site, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: mahilu.site}}
+- {name: 🏁RELAY-104.21.224.202-197, server: 104.21.224.202, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳@WangCai_8", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.224.81-198, server: 104.21.224.81, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.229.47-199, server: 104.21.229.47, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.224.249-201, server: 104.21.224.249, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🇦🇶FASTLY-151.101.193.57-202, server: fastly.com, port: 80, type: vmess, uuid: 66ccb11f-75a7-4282-8a60-31fed447401d, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/aries?ed=2048", tls: false, ws-headers: {Host: nmsl.kp}}
+- {name: 🇮🇪IE-52.213.40.128-203, server: 52.213.40.128, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true}
+- {name: 🏁RELAY-104.21.82.39-204, server: mahilu.site, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: mahilu.site}}
+- {name: 🇮🇪IE-52.48.207.242-205, server: 52.48.207.242, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true}
+- {name: 🏁RELAY-104.21.54.252-206, server: 104.21.54.252, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: www.velvetmountain.shop}}
+- {name: 🏁RELAY-104.21.233.47-207, server: 104.21.233.47, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳@WangCai_8", tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🇮🇪IE-34.246.113.108-208, server: 34.246.113.108, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true}
+- {name: 🏁RELAY-10.10.34.36-209, server: max-ip.hiroman5445.ir, port: 3586, type: vmess, uuid: 763d2999-6321-4e4a-9eea-574820d0a547, alterId: 0, cipher: auto, skip-cert-verify: true, network: tcp, ws-path: /OUIpxwwmtpJGIWzraW7dl5, tls: false, ws-headers: {Host: speedtest.net}}
+- {name: 🏁RELAY-23.227.39.24-210, server: 23.227.39.24, port: 8080, type: vmess, uuid: 9258153a-dc97-4e39-9037-009abfc4fed0, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm, tls: false, ws-headers: {Host: per-essex-patterns-bowling.trycloudflare.com}}
+- {name: 🇬🇧GB-51.140.60.38-212, server: 51.140.60.38, port: 51296, type: ss, cipher: chacha20-ietf-poly1305, password: 0Pq1p4I2qNaulOXwn34GG1}
+- {name: 🏁RELAY-172.67.143.192-213, server: 172.67.143.192, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: www.velvetmountain.shop}}
+- {name: 🏁RELAY-104.21.224.136-214, server: 104.21.224.136, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-104.21.229.26-215, server: 104.21.229.26, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🇫🇷FR-95.179.209.248-216, server: 95.179.209.248, port: 1080, type: ss, cipher: chacha20-ietf-poly1305, password: VS26JLbJV869EBN1lBn2LQ}
+- {name: 🏁RELAY-104.21.225.8-217, server: 104.21.225.8, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🏁RELAY-104.21.224.129-218, server: 104.21.224.129, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳@WangCai_8", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🏁RELAY-94.140.0.110-219, server: 94.140.0.110, port: 8880, type: vmess, uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: food.zhaal.ir}}
+- {name: 🇫🇮FI-95.216.200.161-220, server: 95.216.200.161, port: 30475, type: vmess, uuid: 0a1fad4c-2c44-4649-be8d-a3c56184dcf8, alterId: 0, cipher: auto, skip-cert-verify: true, network: tcp, ws-path: /, tls: false, ws-headers: {Host: www.pcmag.com}}
+- {name: 🇩🇪DE-95.164.68.116-221, server: 95.164.68.116, port: 2053, type: trojan, password: f37a931d-7092-48fe-b82f-a98da3040eb2, sni: ftp.debian.org, skip-cert-verify: true}
+- {name: 🏁RELAY-104.21.225.29-222, server: 104.21.225.29, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳 @WangCai08", tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🇺🇸US-3.137.127.245-223, server: 3.137.127.245, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true}
+- {name: 🏁RELAY-172.67.215.103-224, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: www.darkroom.lol}}
+- {name: 🇨🇾CY-85.239.40.69-225, server: 85.239.40.69, port: 21205, type: ss, cipher: aes-256-gcm, password: P84jEsm2JGaOIpEv}
+- {name: 🏁RELAY-162.159.2.9-226, server: yh2.dtku41.xyz, port: 8080, type: vmess, uuid: 9258153a-dc97-4e39-9037-009abfc4fed0, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm, tls: false, ws-headers: {Host: per-essex-patterns-bowling.trycloudflare.com}}
+- {name: 🏁RELAY-104.21.82.183-227, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: server26.beheshtbaneh.com}}
+- {name: 🏁RELAY-104.26.5.57-228, server: russia.com, port: 8880, type: vmess, uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, tls: false, ws-headers: {Host: ssrsub.v03.ssrsub.com}}
+- {name: 🏁RELAY-104.21.228.40-229, server: 104.21.228.40, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: a.prapt4.ir}}
+- {name: 🏁RELAY-172.67.152.170-230, server: 172.67.152.170, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: mahilu.site}}
+- {name: 🇺🇸US-167.88.61.175-231, server: 167.88.61.175, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+- {name: 🇺🇸US-52.89.127.98-232, server: 52.89.127.98, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true}
+- {name: 🏁RELAY-104.21.224.8-233, server: 104.21.224.8, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048&Telegram🇨🇳", tls: false, ws-headers: {Host: a.prapt1.ir}}
+- {name: 🇩🇪DE-3.65.115.111-234, server: 3.65.115.111, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true}
+- {name: 🇳🇱NL-185.242.86.156-235, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV}
+- {name: 🇱🇺LU-202.78.162.5-236, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: true, ws-headers: {Host: irsoft.sytes.net}}
+- {name: 🇱🇺LU-202.78.162.5-237, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: true, ws-headers: {Host: sahand.serveminecraft.net}}
+- {name: 🏁RELAY-104.21.61.214-238, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: www.darkroom.lol}}
+- {name: 🇫🇷FR-193.243.147.128-239, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X}
+- {name: 🏁RELAY-172.67.161.114-240, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: server31.beheshtbaneh.com}}
+- {name: 🇨🇳CN-183.232.170.157-241, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /debian, tls: false, ws-headers: {Host: data-us-v1.shwjfkw.cn}}
+- {name: 🇨🇳CN-120.238.122.160-242, server: service.ouluyun9803.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2}
+- {name: 🏁RELAY-104.21.82.183-243, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: server26.beheshtbaneh.com}}
+- {name: 🇱🇺LU-202.78.162.5-244, server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: true, ws-headers: {Host: pendar.onthewifi.com}}
+- {name: 🇨🇳CN-120.238.122.160-245, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2}
+- {name: 🇨🇳CN-120.238.122.160-246, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2}
+- {name: 🇦🇶FASTLY-151.101.0.144-247, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /77848824, tls: true, ws-headers: {Host: zheshiscp.com}}
+- {name: 🏁RELAY-104.21.82.183-248, server: server32.beheshtbaneh.com, port: 8880, type: vmess, uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9, alterId: 0, cipher: auto, skip-cert-verify: true, network: ws, ws-path: /, tls: false, ws-headers: {Host: server32.beheshtbaneh.com}}
